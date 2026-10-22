@@ -1,0 +1,9 @@
+*.csv
+!**/sample*.csv
+*.wav
+*.mp3
+*.xlsx
+.env
+.env.*
+node_modules/
+__pycache__/
