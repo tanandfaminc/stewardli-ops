@@ -36,3 +36,39 @@ Phone calls only: 346 calls, 251 min, USD 28.77, 0.115/min.
 - Retell billing page (admin) for invoiced totals by month
 - Twilio usage export (Tan to sign in, then pull)
 - GHL plan and monthly amount
+
+---
+
+# Twilio actuals, pulled Oct 23, 2026
+
+Source: Twilio console Usage and Spend by product, Sept 2025 to Oct 2026. Estimates per Twilio until month-end statements. Account balance USD 43.16.
+
+| Month | Messaging | Numbers | SIP calls | SIP $ | Total |
+|---|---|---|---|---|---|
+| 2025-09 | 0.00 | 1.15 | 2 | 0.02 | 1.21 |
+| 2025-10 | 0.02 | 3.05 | 18 | 0.16 | 3.26 |
+| 2025-11 | **29.55** | 1.90 | 75 | 0.60 | 32.05 |
+| 2025-12 | 1.53 | 1.90 | 49 | 0.39 | 3.82 |
+| 2026-01 | 1.52 | 1.90 | 5 | 0.07 | 3.49 |
+| 2026-02 | 1.50 | 1.90 | 146 | 2.08 | 5.48 |
+| 2026-03 | 1.67 | 1.90 | 58 | 1.90 | 5.47 |
+| 2026-04 | 1.54 | 1.90 | 17 | 0.62 | 4.06 |
+| 2026-05 | 1.50 | 1.90 | 2 | 0.02 | 3.42 |
+| 2026-06 | 1.50 | 1.90 | 14 | 0.13 | 3.53 |
+| 2026-07 | 1.50 | 1.90 | 36 | 0.33 | 3.73 |
+| 2026-08 | 1.50 | 1.90 | 6 | 0.06 | 3.46 |
+| 2026-09 | 1.50 | 1.90 | 0 | 0.00 | 3.52 |
+| 2026-10 | 1.50 | 1.15 | 21 | 0.16 | 2.81 |
+| **Total** | | | **449** | **6.54** | **79.31** |
+
+## What it says
+1. Twilio is USD 3.50 a month flat. Two numbers (1.90) plus a 1.50 recurring messaging line, almost certainly the A2P 10DLC campaign fee. Actual call usage over 14 months: USD 6.54 for 449 SIP calls, about 1.5 cents a call.
+2. The Nov 2025 spike (29.55 messaging) is a one-time item, looks like 10DLC brand/campaign registration. Not recurring.
+3. Oct 2026 phone numbers dropped to 1.15 from 1.90. Check that both numbers (main + Aphasia) are still billed, or the Aphasia number is prorated.
+4. Sept 2026 has a 0.12 Branded Calling line. Someone turned on or tested CNAM. Worth knowing before the Aphasia calls go out, branded caller ID would help pickup.
+
+## Combined picture, 14 months
+- Retell: USD 39.90
+- Twilio: USD 79.31 (47 of it is the Nov 2025 one-off plus number rental)
+- Total variable platform spend: about USD 120 over 14 months, under USD 9 a month
+- GHL at USD 297 a month is 33x the voice stack. That's the cost conversation.
