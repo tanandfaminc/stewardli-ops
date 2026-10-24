@@ -7,8 +7,8 @@ Tan capacity: 8 to 10 hrs/week. Aphasia build is about 12 hrs, run about 4.
 | Week | What ships | Owner | Dependency | Status |
 |---|---|---|---|---|
 | Oct 26 to 30 (~9 hrs) | Mon: script fix "annual appeal" (drafted, Tan applies) | Tan | none | Not started |
-| | Tue: branching step (mobile offers SMS, landline asks for cell, email fallback) | Tan | Lookup spend yes | Not started |
-| | Wed: AI opt-out GHL field plus Aphasia sub-account | Tan | none | Not started |
+| | Tue: branching step (Nora asks "is this a cell phone?", mobile offers SMS, landline asks for cell, email fallback) | Tan | none, no Lookup | Not started |
+| | Wed: n8n mapping for the 3 new GHL fields and opt-out (fields + tags created Oct 22 on MVP, no sub-account for pilot) | Tan | none | Fields done |
 | | Thu: voicemail draft (off until approved), test plan | Tan | none | Not started |
 | | Thu: NDA and COI signed | Chris / Aphasia | Hard gate for donor file | Pending |
 | | Fri: donor file to secure intake, go/no-go at Friday session | Aphasia / Tan / Chris | NDA + COI | Pending |
@@ -42,7 +42,7 @@ Must be true by Jan 15 for Feb calls:
 
 ## 3. Decisions needed from Chris
 
-- Today Oct 23: approve Lookup spend (~$1 for 130 numbers). Send Peter the success-metric reply.
+- Today Oct 23: send Peter the success-metric reply (draft in aphasia/pilot-recommendation.md).
 - Oct 26: grant Nora demo repo access.
 - Oct 29: NDA and COI signed.
 - Oct 30: go/no-go. Name an owner for the networking event. Pick the in-person meeting date.
