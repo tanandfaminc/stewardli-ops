@@ -1,0 +1,5 @@
+# Prompt H: Dropbox intake for the Aphasia file
+
+Peter's data team will send 133 donor records to Tan and Chris via Dropbox once the confidentiality agreement is signed. Set up the receiving side so the file lands in one place and nowhere else. Read aphasia/intake-options.md and research/rkd-data-consent-model.md first.
+
+Deliver: (1) a Dropbox file request or shared folder plan under the tan.h@stewardli.ai account (not Tan & Fam), named "Aphasia Institute - Annual Appeal 2026 - Pilot Data", one owner, Chris as viewer, link expiry, deletion date Dec 6, 2026; (2) a three-line reply to Peter telling him where to drop it and asking that the password or link not go to anyone else; (3) handling rules as a short checklist: no forwarding, no copies on personal devices, no upload to any AI tool other than the GHL import, delete on Dec 6 and confirm to Peter; (4) the import plan: which columns map to which GHL fields on the MVP sub-account per ghl/mvp-field-map.md, tags client:aphasia and campaign:cmp_aphasia_appeal_26, and the rule that call_scheduled is never imported. Walk Tan through creating the Dropbox folder in Chrome. Do not import anything until Tan says.
