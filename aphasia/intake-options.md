@@ -1,3 +1,5 @@
+> Superseded Oct 26: the file comes via Dropbox. See aphasia/dropbox-intake.md.
+
 # Aphasia Donor CSV: Secure Intake
 
 Peter holds the CSV (~130 rows). Pilot calls run Nov 2 to 6, 2026. Zero new spend. No donor data in repos.
