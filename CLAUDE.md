@@ -1,5 +1,7 @@
 # Stewardli ops
 
+**Read STATUS.md first.** It says where we are, what is live, what is decided, and what is open. Update it before you push if you changed anything.
+
 Tan Husnani, technical partner at Stewardli (AI donor stewardship for Canadian nonprofits). Co-founders Chris and Fred Nithiananthan.
 Stack: GoHighLevel, n8n (automation.stewardli.ai), Retell (Nora voice agent), Twilio, SendGrid.
 
