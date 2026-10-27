@@ -32,6 +32,7 @@ Aphasia Institute pilot signed Oct 26. Nora calls 133 donors Nov 4 to 6. Appeal 
 | Send 133-record file via Dropbox | Peter's data team | COI signed |
 | Segmentation plan | Peter | to Paul and Mobbs |
 | Sample script, voicemail and transfer rules | Mobbs | Tan's email (sent Oct 26?) |
+| Caller ID for Nora number +1 289 207 6218: unbranded today (only Stewardli main is branded, as "Stewardli.ai"). Pick an option in aphasia/nora-number-check.md | Tan | Decide before Nov 4 |
 | Test Retell V8 by phone (aphasia/test-plan.md, 15 rows, log in aphasia/test-log-2026-10-26.md) | Tan + Claude | V8 is in Draft V7. Must finish before Nov 2 |
 | n8n: map the 5 new post-call fields to GHL (see ghl/mvp-field-map.md) | Tan approves | Draft only. Live workflow |
 | Publish V8 and keep the number on it | Tan | Tests passing, Mobbs's edits in |
