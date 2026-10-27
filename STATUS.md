@@ -1,6 +1,6 @@
 # STATUS: read this first
 
-Last updated: Mon Oct 26, 2026, late afternoon ET. Update this file at the end of every session that changes anything.
+Last updated: Tue Oct 27, 2026, 10:45am ET. Update this file at the end of every session that changes anything.
 
 ## Where we are
 Aphasia Institute pilot signed Oct 26. Nora calls 133 donors Nov 4 to 6. Appeal letter mails Nov 5 or 6. Everything else is in service of that until Nov 6.
@@ -8,7 +8,7 @@ Aphasia Institute pilot signed Oct 26. Nora calls 133 donors Nov 4 to 6. Appeal 
 ## Live systems, current state
 | System | State | Changed by |
 |---|---|---|
-| Retell agent "Aphasia - Nora (outbound)" | **Live calls run on Draft V7.** The outbound number is attached to Draft V7, not to a published version. Last published is V6 (Oct 15, 11:21 PM). V6 and V7 prompts are identical and match aphasia/nora-prompt-live.md. The Oct 16 call to Mobbs ran V7 (see aphasia/v7-mobbs-call-review.md). Editing the draft in Retell changes live calls. V8 written (aphasia/nora-prompt-v8.md), NOT entered in Retell. | Checked by Claude via Chrome, Oct 26 |
+| Retell agent "Aphasia - Nora (outbound)" | **Live calls run on Draft V7.** The outbound number is attached to Draft V7, not to a published version. Last published is V6 (Oct 15, 11:21 PM). V6 and V7 prompts are identical and match aphasia/nora-prompt-live.md. The Oct 16 call to Mobbs ran V7 (see aphasia/v7-mobbs-call-review.md). Editing the draft changes live calls. **Oct 27, 10:34 to 10:42: V8 prompt, V8 voicemail and 5 post-call fields (line_type_confirmed, sms_opt_in, email_opt_in, cell_number_provided, ai_opt_out) entered in Draft V7.** Tan OK'd this because nothing dials before Nov 4. Not published. The number now calls with V8. | Claude via Chrome, Oct 27, Tan's go-ahead |
 | Retell agent "Aphasia - Inbound Forward to Office" | Live, transfers to 416-226-3636 ext 127 | Tan, Oct 14 |
 | GHL MVP sub-account | 3 new fields (ai_call_opt_status, line_type_confirmed, program_segment) + 2 tags (client:aphasia, campaign:cmp_aphasia_appeal_26) created Oct 22. No workflows changed. No contacts imported. | Claude via Chrome, Oct 22 |
 | n8n | Unchanged. SMS consent mapping still unverified (see ghl/mvp-field-map.md note). | |
@@ -31,7 +31,9 @@ Aphasia Institute pilot signed Oct 26. Nora calls 133 donors Nov 4 to 6. Appeal 
 | Send 133-record file via Dropbox | Peter's data team | COI signed |
 | Segmentation plan | Peter | to Paul and Mobbs |
 | Sample script, voicemail and transfer rules | Mobbs | Tan's email (sent Oct 26?) |
-| Build Retell V8 and test | Tan | Prompt written. Paused before Retell: decide where V8 goes, since the number is attached to Draft V7 |
+| Test Retell V8 by phone (aphasia/test-plan.md, 15 rows, log in aphasia/test-log-2026-10-26.md) | Tan + Claude | V8 is in Draft V7. Must finish before Nov 2 |
+| n8n: map the 5 new post-call fields to GHL (see ghl/mvp-field-map.md) | Tan approves | Draft only. Live workflow |
+| Publish V8 and keep the number on it | Tan | Tests passing, Mobbs's edits in |
 | Twilio billing owner | Tan | prompts/G |
 | Dropbox receiving folder | Tan | prompts/H |
 | Nov 1 in-person prep | Tan | prompts/I |
