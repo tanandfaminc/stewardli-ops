@@ -13,6 +13,7 @@ Aphasia Institute pilot signed Oct 26. Nora calls 133 donors Nov 4 to 6. Appeal 
 | GHL MVP sub-account | 3 new fields (ai_call_opt_status, line_type_confirmed, program_segment) + 2 tags (client:aphasia, campaign:cmp_aphasia_appeal_26) created Oct 22. No workflows changed. No contacts imported. | Claude via Chrome, Oct 22 |
 | n8n | Unchanged. SMS consent mapping still unverified (see ghl/mvp-field-map.md note). | |
 | Twilio | Unchanged. Billing owner unverified. | |
+| Dropbox tan.h@stewardli.ai (Basic, free) | File request "Aphasia Institute - Annual Appeal 2026 - Pilot Data" open, no deadline or password (Basic). Folder of same name, 0 items. Tan owner, chris.n@stewardli.ai can view. No shared link. | Tan + Claude via Chrome, Oct 26 |
 
 ## Decisions locked (do not reopen without Chris)
 - No phone append. Call all 133, no A/B split. Pilot proves experience and ops, not gift lift.
@@ -35,7 +36,8 @@ Aphasia Institute pilot signed Oct 26. Nora calls 133 donors Nov 4 to 6. Appeal 
 | n8n: map the 5 new post-call fields to GHL (see ghl/mvp-field-map.md) | Tan approves | Draft only. Live workflow |
 | Publish V8 and keep the number on it | Tan | Tests passing, Mobbs's edits in |
 | Twilio billing owner | Tan | prompts/G |
-| Dropbox receiving folder | Tan | prompts/H |
+| Send reply to Peter with file request link | Tan | Chris's COI + NDA signed. Draft in aphasia/dropbox-intake.md |
+| Dec 6 delete reminder on Tan's and Chris's calendars | Tan | |
 | Nov 1 in-person prep | Tan | prompts/I |
 | Retell billing admin or invoice screenshot | Chris | |
 | GHL plan and amount | Chris | |
@@ -52,7 +54,7 @@ Aphasia Institute pilot signed Oct 26. Nora calls 133 donors Nov 4 to 6. Appeal 
 | E | Pilot design pressure test | done, see aphasia/pilot-recommendation.md |
 | F | Build and test Retell V8 | **run today** |
 | G | Twilio billing audit | run today, parallel |
-| H | Dropbox intake | run today, parallel |
+| H | Dropbox intake | done Oct 26, see aphasia/dropbox-intake.md. Nothing imported |
 | I | Nov 1 in-person prep | tomorrow |
 
 ## Folder map
