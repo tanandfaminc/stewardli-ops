@@ -1,6 +1,6 @@
 # STATUS: read this first
 
-Last updated: Tue Oct 27, 2026, 10:45am ET. Update this file at the end of every session that changes anything.
+Last updated: Wed Oct 28, 2026, 6:45pm ET. Update this file at the end of every session that changes anything.
 
 ## Where we are
 Aphasia Institute pilot signed Oct 26. Nora calls 133 donors Nov 4 to 6. Appeal letter mails Nov 5 or 6. Everything else is in service of that until Nov 6.
@@ -39,7 +39,7 @@ Aphasia Institute pilot signed Oct 26. Nora calls 133 donors Nov 4 to 6. Appeal 
 | Twilio billing owner | Tan | prompts/G |
 | Send reply to Peter with file request link | Tan | Chris's COI + NDA signed. Draft in aphasia/dropbox-intake.md |
 | Dec 6 delete reminder on Tan's and Chris's calendars | Tan | |
-| Nov 1 in-person prep | Tan | prompts/I |
+| Nov 1 in-person: fill hours table and section E in agenda-nov1-inperson.md | Tan | before Sun Nov 1 |
 | Retell billing admin or invoice screenshot | Chris | |
 | GHL plan and amount | Chris | |
 | Nora demo repo access | Chris | since Oct 20 |
@@ -56,7 +56,7 @@ Aphasia Institute pilot signed Oct 26. Nora calls 133 donors Nov 4 to 6. Appeal 
 | F | Build and test Retell V8 | **run today** |
 | G | Twilio billing audit | run today, parallel |
 | H | Dropbox intake | done Oct 26, see aphasia/dropbox-intake.md. Nothing imported |
-| I | Nov 1 in-person prep | tomorrow |
+| I | Nov 1 in-person prep | done Oct 28, see agenda-nov1-inperson.md |
 
 ## Folder map
 - aphasia/ ... everything for the pilot: live prompt, v8 draft, branching spec, voicemail, test plan, intake options, pilot stats and recommendation, phone append research
