@@ -127,3 +127,9 @@ New GHL workflow "Aphasia Nora Calls": trigger Tag Added = aphasia_call_now → 
 How a call starts now: contact in GHL (import with stewardli_campaign_started tag, consent_call TRUE, dnd_call FALSE, campaign_id blank) → add tag aphasia_call_now → GHL webhook → n8n Aphasia Call Campaign → Retell Nora from +1 289 207 6218 → post-call → n8n Aphasia Post Call → GHL.
 
 Note: Nora's Oct 16 style test calls from the Retell dashboard now also report to the Aphasia post-call workflow. They carry no contact_id, so it stops at "Contact ID Exists".
+
+## Test prep, Oct 29 10:55am
+- One test contact, not five: GHL treats the same phone as a duplicate. Using Tan's existing contact (GHL id 5XyHdWNJGke4VgWCaToQ), fields changed between tests. Original values saved outside the repo, restore after tests.
+- **Finding: GHL Donor Segment options are new, active, lapsed, monthly, major, unknown. No "returning".** The prompt only knows new / returning / lapsed, so "active" gets the default thank you. Fix before import: map Peter's segments to new / active / lapsed and teach the prompt that active = returning (needs Tan's go, Retell edit).
+- GHL "Aphasia Nora Calls" has Allow re-entry on.
+- Test A contact state: Aphasia Institute, Aphasia Annual Appeal 2026, campaign_id blank, last gift 50, segment active, program walk_and_roll, appeal mail, consent_call TRUE, dnd_call FALSE, consent_sms FALSE, preferred_channel voice_call, line_type unknown, ai_call_opt_status not_asked.
