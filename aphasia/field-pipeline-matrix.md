@@ -100,3 +100,20 @@ Real GHL contacts, Tan's own phone number, same tags as the pilot. Each one runs
 | E. Wants a person after hours | base, dial after 4pm | call back offer. callback_requested and notes land in GHL. Then say "don't call me with AI". Check ai_opt_out writes back and dnd_call is true |
 
 After each: check Retell post-call data AND the GHL contact. Delete the 5 test contacts after.
+
+## GHL read, Oct 29 11am (app.stewardli.ai, MVP sub-account, read only)
+7 workflows. Relevant:
+- **Donor Campaign (published).** Trigger: **Contact Created, no filter.** Every imported contact enters it.
+  1. Tag includes stewardli_campaign_started → END.
+  2. Else add tag, then: Campaign ID empty → END.
+  3. Call Scheduled set → wait until that time. Then by Preferred Channel: voice_call → webhook to n8n **call-campaign** (wrong agent and number for Aphasia), sms → webhook, email → tag + add to another workflow, mixed → webhook, none → note.
+  - So an Aphasia import with campaign_id set and preferred_channel voice_call would dial right away with the wrong agent.
+- **Call Retry - No Answer/Voicemail (published).** Redials. Fed by the stewardli_retry_needed tag. Aphasia Post Call never sets it.
+- **Call Scheduled (published).** Fed by call_scheduled. Aphasia Post Call never sets it.
+- Webhook action = plain POST, standard contact data, no custom data. n8n reads custom fields by display name or key.
+
+### Plan to keep Aphasia contacts out of Donor Campaign (no edit to it)
+Import with tag stewardli_campaign_started AND campaign_id blank. Either one ends it. Verify on test contacts in Enrollment history.
+
+### Aphasia trigger (to build, needs Tan's go)
+New GHL workflow "Aphasia Nora Calls": trigger Tag Added = aphasia_call_now → Webhook POST https://automation.stewardli.ai/webhook/aphasia-call-campaign. Import does not dial. Calling starts only when Tan adds aphasia_call_now to a batch.

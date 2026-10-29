@@ -1,7 +1,7 @@
 # Aphasia import template (GHL MVP sub-account)
 
 File: ghl/aphasia-import-template.csv. Two sample rows only (fake people, 555 numbers). Never commit real donor rows.
-Tags added in the GHL import screen: client:aphasia, campaign:cmp_aphasia_appeal_26.
+Tags added in the GHL import screen: client:aphasia, campaign:cmp_aphasia_appeal_26, **stewardli_campaign_started** (keeps contacts out of Donor Campaign). Calling starts only when the tag aphasia_call_now is added.
 
 | Column | GHL field | From | Rule |
 |---|---|---|---|
@@ -20,7 +20,8 @@ Tags added in the GHL import screen: client:aphasia, campaign:cmp_aphasia_appeal
 | consent_sms | consent_sms | Peter | usually blank. Nora asks |
 | dnd_call, dnd_sms, dnd_email | dnd_* | fixed | **FALSE** on every row, or n8n blocks the call |
 | organization_name | organization_name | fixed | Aphasia Institute |
-| campaign_name, campaign_id | campaign_* | fixed | Aphasia Annual Appeal 2026 / cmp_aphasia_appeal_26 |
+| campaign_name | campaign_name | fixed | Aphasia Annual Appeal 2026 |
+| campaign_id | campaign_id | fixed | **leave BLANK.** If set, Donor Campaign (Contact Created) can dial with the wrong agent |
 | ai_call_opt_status | ai_call_opt_status | fixed | not_asked |
 | line_type_confirmed | line_type_confirmed | fixed | unknown |
 
