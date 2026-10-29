@@ -1,6 +1,6 @@
 # STATUS: read this first
 
-Last updated: Wed Oct 28, 2026, 6:45pm ET. Update this file at the end of every session that changes anything.
+Last updated: Wed Oct 28, 2026, 10:55pm ET. Update this file at the end of every session that changes anything.
 
 ## Where we are
 Aphasia Institute pilot signed Oct 26. Nora calls 133 donors Nov 4 to 6. Appeal letter mails Nov 5 or 6. Everything else is in service of that until Nov 6.
@@ -19,7 +19,9 @@ Aphasia Institute pilot signed Oct 26. Nora calls 133 donors Nov 4 to 6. Appeal 
 - No phone append. Call all 133, no A/B split. Pilot proves experience and ops, not gift lift.
 - No Twilio Lookup. Nora asks "is this a cell phone?" on the call.
 - Pilot runs on the MVP sub-account with a tag. Separate sub-account after Nov 6.
-- Voicemail on no-answer: on (Paul's ask).
+- Voicemail on no-answer: on (Paul's ask). Wording: Mobbs's Oct 28 edit, see aphasia/voicemail.md.
+- Office hours Mon to Fri 8 to 4 (Mobbs, Oct 28). Person requests go to ext 127. After hours Nora offers an Institute call back, never "leave a message".
+- Gratitude default is "your support this year". Program named only when the record shows it. Campaign name never spoken.
 - Never volunteer gift amounts. Answer from giving history only if the donor asks. (Chris, Oct 26)
 - "Annual campaign" becomes "annual appeal" everywhere. (Mobbs)
 - Donor file arrives via Dropbox after NDA + Chris's COI. Delete Dec 6.
@@ -31,11 +33,18 @@ Aphasia Institute pilot signed Oct 26. Nora calls 133 donors Nov 4 to 6. Appeal 
 | Confirm mail date | Peter | EOD Oct 27 |
 | Send 133-record file via Dropbox | Peter's data team | COI signed |
 | Segmentation plan | Peter | to Paul and Mobbs |
-| Sample script, voicemail and transfer rules | Mobbs | Tan's email (sent Oct 26?) |
+| Mobbs reply received Oct 28 (aphasia/mobbs-reply-2026-10-28.md). V9 drafted: aphasia/nora-prompt-v9.md, plain English diff in aphasia/v9-changes.md | Tan | Read v9-changes.md and say go. Then V9 into Retell Draft V7 in a separate step |
+| Send reply to Mobbs (aphasia/reply-to-mobbs-draft.md). Fill Friday time | Tan | nothing |
+| Mobbs Q1: do email-only donors get a letter? (voicemail "or through email") | Mobbs | Tan's reply |
+| Mobbs Q2: OK to say Talk, Walk 'n Roll by name when the record shows it? | Mobbs | Tan's reply |
+| Peter: how many of 133 have a phone, consent to phone contact in writing, DNC removed, name split (see aphasia/dropbox-intake.md) | Peter | Friday fields call |
+| Call back list: callback_requested now means the Institute calls back. Route it to Mobbs | Tan | not built |
+| Confirm live transfer tool on outbound agent | Tan | before Nov 4 |
+| Add V9 test rows (after hours 3:55/4:05/Sat, empty program, empty first_name, empty gift record) to aphasia/test-plan.md | Tan + Claude | V9 in draft |
 | Caller ID for Nora number +1 289 207 6218: unbranded today (only Stewardli main is branded, as "Stewardli.ai"). Pick an option in aphasia/nora-number-check.md | Tan | Decide before Nov 4 |
 | Test Retell V8 by phone (aphasia/test-plan.md, 15 rows, log in aphasia/test-log-2026-10-26.md) | Tan + Claude | V8 is in Draft V7. Must finish before Nov 2 |
 | n8n: map the 5 new post-call fields to GHL (see ghl/mvp-field-map.md) | Tan approves | Draft only. Live workflow |
-| Publish V8 and keep the number on it | Tan | Tests passing, Mobbs's edits in |
+| Publish V9 and keep the number on it | Tan | V9 approved, tests passing |
 | Twilio billing owner | Tan | prompts/G |
 | Send reply to Peter with file request link | Tan | Chris's COI + NDA signed. Draft in aphasia/dropbox-intake.md |
 | Dec 6 delete reminder on Tan's and Chris's calendars | Tan | |
@@ -57,6 +66,7 @@ Aphasia Institute pilot signed Oct 26. Nora calls 133 donors Nov 4 to 6. Appeal 
 | G | Twilio billing audit | run today, parallel |
 | H | Dropbox intake | done Oct 26, see aphasia/dropbox-intake.md. Nothing imported |
 | I | Nov 1 in-person prep | done Oct 28, see agenda-nov1-inperson.md |
+| J | Mobbs reply into V9 | done Oct 28, V9 drafted, not in Retell |
 
 ## Folder map
 - aphasia/ ... everything for the pilot: live prompt, v8 draft, branching spec, voicemail, test plan, intake options, pilot stats and recommendation, phone append research

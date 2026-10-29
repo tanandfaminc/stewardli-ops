@@ -1,26 +1,24 @@
 # Nora voicemail (no answer)
 
+Status: **ON** (Paul's ask, locked). Wording approved by Mobbs Oct 28, with her edit.
 Variables: {{first_name}}, {{organization_name}}
-Spoken length: about 12 to 15 seconds.
-Do not add a callback number. Do not ask for anything.
+Spoken length: about 13 to 15 seconds.
+Do not add a callback number. Do not ask for anything. Never name a program. Never say a gift amount.
 
-## Variant A (recommended)
+## Use this
 
-"Hi {{first_name}}, this is Nora, an AI assistant calling from {{organization_name}}. I just wanted to thank you for supporting the walk. Your annual appeal letter is on its way. There is nothing you need to do. Have a lovely day."
+"Hi {{first_name}}, this is Nora, an AI assistant calling from {{organization_name}}. I just wanted to thank you for your support this year. Your annual appeal letter will be arriving in the mail soon. There is nothing you need to do. Have a lovely day."
 
-## Variant B
+If {{first_name}} is empty, start with "Hi, this is Nora."
 
-"Hi {{first_name}}, this is Nora, an AI assistant calling from {{organization_name}}. Thank you for supporting the walk. Your annual appeal letter is on its way. Nothing you need to do, and nothing to call back about. Have a lovely day."
+## Pending Mobbs (Q1: do email-only donors get a letter?)
 
-## Variant C (if the donor list mixes walk, art sale and other gifts)
+If some donors get the appeal by email only, swap the letter sentence for Paul's version:
+"Your annual appeal letter will be arriving in the mail or through email soon."
 
-"Hi {{first_name}}, this is Nora, an AI assistant calling from {{organization_name}}. I just wanted to thank you for your support this year. Your annual appeal letter is on its way. There is nothing you need to do. Have a lovely day."
+## Retired
+Variants A and B ("supporting the walk") are gone. Not everyone on the list gave to the walk (Mobbs and Paul, Oct 28).
 
-## Recommendation
-
-Variant A if every donor on the Nov list gave to the walk. Variant C if not. Or use {{program_name}} as a variable with "your support this year" as the fallback when it's empty.
-
-## To apply in Retell
-- Agent > Voicemail detection > leave message. Paste the chosen variant.
-- The live voicemail section in the prompt uses {{customer_name}} and says no campaign mention. Replace it with this. Paul wants voicemail on.
-- Retell's voicemail message supports dynamic variables the same way the prompt does.
+## To apply in Retell (only after Tan says go)
+- Agent > Voicemail detection > leave message. Paste the line above.
+- Must match the Voicemail section of aphasia/nora-prompt-v9.md word for word.
