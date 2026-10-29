@@ -80,3 +80,6 @@ Any donor can be missing segment, program, gift date, gift history or email. Nor
 - Cell number "yes" with no digits: ask "What's the number?" before moving on.
 - LANDLINE RULE at the top of Step 5: landline and no cell number given = never ask about texts.
 - Personal connection to aphasia: "Thank you for sharing that." once, same tone and pace, no accessible mode. No filler words (um, uh).
+
+## Oct 29 2:10pm update (after test C rerun)
+- Step 3: if the donor says yes to "anything you'd like to know about how your support is being used?", answer in one or two sentences before moving on.
