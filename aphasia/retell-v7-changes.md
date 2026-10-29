@@ -56,3 +56,8 @@ Any donor can be missing segment, program, gift date, gift history or email. Nor
 - Live transfer to ext 127 only fires if the outbound agent has the transfer tool and the office is open. Confirm whether it's enabled before Nov 4.
 - callback_requested now means "the Institute calls back," not Nora. Someone has to send Mobbs that list. Not built.
 - Add test rows: program_segment empty (default line), first_name empty, gift question with empty record, campaign name never spoken.
+
+
+## Oct 29 update (Mobbs's answers, in Retell Draft V7 at 10:01am)
+- Thank you says "your support this year" for everyone. No program names, including the art sale.
+- Voicemail: "Your annual appeal letter will be arriving in the mail or through email soon."

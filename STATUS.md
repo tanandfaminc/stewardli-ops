@@ -1,6 +1,6 @@
 # STATUS: read this first
 
-Last updated: Thu Oct 29, 2026, 9:25am (Mobbs answers staged). Update this file at the end of every session that changes anything.
+Last updated: Thu Oct 29, 2026, 10:05am (Mobbs answers in Retell Draft V7). Update this file at the end of every session that changes anything.
 
 ## Where we are
 Aphasia Institute pilot signed Oct 26. Nora calls 133 donors Nov 4 to 6. Appeal letter mails Nov 5 or 6. Everything else is in service of that until Nov 6.
@@ -8,7 +8,7 @@ Aphasia Institute pilot signed Oct 26. Nora calls 133 donors Nov 4 to 6. Appeal 
 ## Live systems, current state
 | System | State | Changed by |
 |---|---|---|
-| Retell agent "Aphasia - Nora (outbound)" | **Live calls run on Draft V7** (number set to "Latest Created"). Draft V7 = aphasia/nora-prompt-retell-v7.md (Mobbs's Oct 28 edits) + Mobbs's voicemail + 5 post-call fields (line_type_confirmed, sms_opt_in, email_opt_in, cell_number_provided, ai_opt_out). Entered Oct 27 and Oct 28, 11:10pm, Tan's go-ahead (nothing dials before Nov 4). **Not published.** Last published is V6 (Oct 15) = aphasia/nora-prompt-retell-v6.md. The Oct 16 call to Mobbs ran Draft V7 while it still held the V6 prompt (aphasia/v7-mobbs-call-review.md). Editing the draft changes live calls. | Claude via Chrome, Oct 27 and 28 |
+| Retell agent "Aphasia - Nora (outbound)" | **Live calls run on Draft V7** (number set to "Latest Created"). Draft V7 = aphasia/nora-prompt-retell-v7.md (Mobbs's Oct 28 edits, plus her Oct 29 answers entered 10:01am: voicemail "mail or through email", no program names) + Mobbs's voicemail + 5 post-call fields (line_type_confirmed, sms_opt_in, email_opt_in, cell_number_provided, ai_opt_out). Entered Oct 27 and Oct 28, 11:10pm, Tan's go-ahead (nothing dials before Nov 4). **Not published.** Last published is V6 (Oct 15) = aphasia/nora-prompt-retell-v6.md. The Oct 16 call to Mobbs ran Draft V7 while it still held the V6 prompt (aphasia/v7-mobbs-call-review.md). Editing the draft changes live calls. | Claude via Chrome, Oct 27 and 28 |
 | Retell agent "Aphasia - Inbound Forward to Office" | Live, transfers to 416-226-3636 ext 127 | Tan, Oct 14 |
 | GHL MVP sub-account | 3 new fields (ai_call_opt_status, line_type_confirmed, program_segment) + 2 tags (client:aphasia, campaign:cmp_aphasia_appeal_26) created Oct 22. No workflows changed. No contacts imported. | Claude via Chrome, Oct 22 |
 | n8n | Unchanged. SMS consent mapping still unverified (see ghl/mvp-field-map.md note). | |
@@ -42,7 +42,6 @@ Retell's version number is the only version number. One repo file per Retell ver
 | Confirm mail date | Peter | EOD Oct 27 |
 | Send 133-record file via Dropbox | Peter's data team | COI signed |
 | Segmentation plan | Peter | to Paul and Mobbs |
-| Mobbs answered Oct 29: voicemail "in the mail or through email", no program names in the thank you. Staged in aphasia/retell-v7-pending-mobbs-oct29.md | Tan | Tan's go to edit Retell Draft V7 |
 | Fields call with Mobbs **Fri Oct 30, 10:30am, 30 min**. Prep in call-brief-2026-10-30.md | Tan | Tan sends invite |
 | Peter: how many of 133 have a phone, consent to phone contact in writing, DNC removed, name split (see aphasia/dropbox-intake.md) | Peter | Friday fields call |
 | Call back list: callback_requested now means the Institute calls back. Route it to Mobbs | Tan | not built |
