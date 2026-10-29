@@ -43,7 +43,9 @@ Draft V7 is what dials. It reads these fields. Ask in this order. The top block 
 - **Mail date.** Letter goes out Nov 5 or 6? Email version, same day? Nora says "arriving in the mail or through email soon," so calls should not run long after.
 - **Address.** Fine to send, we won't import it and Nora never reads it.
 
-### 4. Logistics (5 min)
+#- **Voicemail to lapsed donors** says "your support this year". OK, or a lapsed version ("your past support")?
+
+## 4. Logistics (5 min)
 - Who uploads (Peter's data team) and when. File request is ready, waiting on COI and NDA.
 - Column headers only, by email before upload, if they can. Lets us build the import mapping without opening donor rows.
 - Delete date Dec 6, written confirmation to Peter.
