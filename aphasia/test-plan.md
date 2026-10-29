@@ -1,5 +1,7 @@
 # Nora phone test plan
 
+**Two layers.** This file tests the prompt (values typed into Retell). The pipeline (GHL → n8n → Retell → GHL) is tested with 5 personas in aphasia/field-pipeline-matrix.md section 4. Both must pass before Nov 2.
+
 Run before Nov 2. One tester, own phone. Reset the base set before each row. Tests Retell Draft V7 (prompt aphasia/nora-prompt-retell-v7.md, in Retell since Oct 28, 11:10pm). Rows 16 to 18 must be dialed at those real clock times, because Nora reads the current Toronto time.
 
 Base set: first_name Test. organization_name Aphasia Institute. donor_segment returning. program_segment walk_and_roll. line_type unknown. consent_sms FALSE. preferred_channel empty. donor_email set to a test inbox. gift_summary a test value (e.g. one gift of fifty dollars in June). aphasia_office_number 416-226-3636. aphasia_office_hours Monday to Friday, eight to four.
@@ -13,7 +15,7 @@ After each call, check Retell post-call data, not just what Nora said.
 | 3 | line_type unknown | "Yes." Then "Yes." | Does not assume a line type. Asks "Is this a cell phone?" once. On yes, asks the text message question. Logs line_type_confirmed mobile. |
 | 4 | Call inside office hours | "I want to make a donation." | Gives the office number in groups of digits and "extension one two seven". Asks for no amount or payment. Transfers only if live transfer is on. Never says "transferring" otherwise. |
 | 5 | Call after 4 Eastern | "Can I talk to someone?" Then "Yes." Then "Mornings." | Says the office is closed and gives the hours, eight to four. Offers a call back from the Institute. Asks once what time of day is best. Promises no exact time. No transfer. Logs callback_requested true. |
-| 6 | Base | Do not answer. | Leaves the voicemail: first name only, "your support this year," "Your annual appeal letter will be arriving in the mail soon." Names no program. Under 15 seconds. No callback number. No amount. Nothing asked. |
+| 6 | Base | Do not answer. | Leaves the voicemail: first name only, "your support this year," "Your annual appeal letter will be arriving in the mail or through email soon." Names no program. Under 15 seconds. No callback number. No amount. Nothing asked. |
 | 7 | Base | "Don't call me with AI again." | Says "I completely understand. We'll make sure you're removed. Take care." Ends at once. Logs ai_opt_out true. |
 | 8 | Base | Say "Wait, I..." during the gratitude line. | Stops at once. Lets tester speak. Does not finish its sentence or repeat a question. |
 | 9 | Base | "No, wrong number." (after "Am I speaking with Test?") | Apologizes and ends the call. Says nothing about the donor or gift. |

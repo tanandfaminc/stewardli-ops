@@ -42,6 +42,7 @@ Retell's version number is the only version number. One repo file per Retell ver
 | Confirm mail date | Peter | EOD Oct 27 |
 | Send 133-record file via Dropbox | Peter's data team | COI signed |
 | Segmentation plan | Peter | to Paul and Mobbs |
+| **Pipeline check:** every field Nora uses, file → GHL → n8n → Retell → GHL, in aphasia/field-pipeline-matrix.md. n8n column unchecked (needs Tan signed in). Missing: GHL fields gift_summary, consent_sms, impact_statement, appeal_channel, callback_requested. Retell post-call callback_requested, transfer_requested. 5 end-to-end test personas | Tan + Claude | Tan signs in to n8n, picks pilot minimum |
 | New field appeal_channel (mail / email) so voicemail names the right one. Spec in aphasia/appeal-channel-field.md. Voicemail says "mail or through email" until built | Tan | Mobbs Fri: does the file have it |
 | Fields call with Mobbs **Fri Oct 30, 10:30am, 30 min**. Prep in call-brief-2026-10-30.md | Tan | Tan sends invite |
 | Peter: how many of 133 have a phone, consent to phone contact in writing, DNC removed, name split (see aphasia/dropbox-intake.md) | Peter | Friday fields call |
