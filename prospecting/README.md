@@ -14,6 +14,8 @@ This is a list and drafts. Nothing here connects or messages anyone. You send ev
 | role | Their role as that page shows it |
 | score | Fit, 4 or 5 only (see below) |
 | source URL | Where the name and role came from. Check it before you send |
+
+Rows to check first in batch 01: Parkdale (ED named in a 2023 source; CanadaHelps says Kathleen, notes say Kitty) and Ernestine's (Laverne Blake was interim ED as of Oct 2025).
 | note v1, v2, v3 | Three connection notes, each under 300 characters |
 
 ## How to use it (10 minutes a day)
@@ -33,6 +35,8 @@ This is a list and drafts. Nothing here connects or messages anyone. You send ev
 
 ## How rows were picked
 Sources: CharityVillage job postings, CanadaHelps charity profiles, Ontario Nonprofit Network. Imagine Canada blocks automated reads, so it's not in batch 01.
+
+Batch 01 is 6 rows, not 25. 39 orgs were collected and scored; only 6 scored 4 or 5. The gap was named contacts: charity staff pages couldn't be read from the build environment, and most job postings say "reports to the Executive Director" without a name. Batch 02 reads staff pages directly and starts from 75 Ontario fundraising postings already found.
 
 Fit score, 1 to 5, on three things:
 - Small enough that they don't have a stewardship team

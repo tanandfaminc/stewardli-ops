@@ -1,6 +1,6 @@
 # STATUS: read this first
 
-Last updated: Wed Oct 28, 2026, 11:20pm ET. Update this file at the end of every session that changes anything.
+Last updated: Thu Oct 29, 2026 (prospecting batch 01). Update this file at the end of every session that changes anything.
 
 ## Where we are
 Aphasia Institute pilot signed Oct 26. Nora calls 133 donors Nov 4 to 6. Appeal letter mails Nov 5 or 6. Everything else is in service of that until Nov 6.
@@ -58,13 +58,14 @@ Retell's version number is the only version number. One repo file per Retell ver
 | GHL plan and amount | Chris | |
 | Nora demo repo access | Chris | since Oct 20 |
 | Costing numbers to Tan and Fred | Chris | overdue |
+| Prospecting batch 01: review format, check against Fred's list before sending | Chris | Fred's list (Tan sending) |
 
 ## Prompts and what they are for
 | Prompt | Use when | Status |
 |---|---|---|
 | A | Aphasia pilot build, original brief | superseded by F |
 | B | Cost report from exports | actuals pulled Oct 23, see cost-report/actuals |
-| C | LinkedIn prospecting tool | Chris's, parked |
+| C | LinkedIn prospecting tool | Batch 01 done Oct 29: 6 contacts, prospecting/contacts-batch-01.csv. Waiting on Chris's format review and Fred's list check. Batch 02 needs Full network access |
 | D | GHL sub-account for Aphasia | parked until after pilot |
 | E | Pilot design pressure test | done, see aphasia/pilot-recommendation.md |
 | F | Build and test the new Nora prompt | prompt in Retell Draft V7, phone tests Oct 29 |
