@@ -1,6 +1,6 @@
 # STATUS: read this first
 
-Last updated: Thu Oct 29, 2026 (prospecting batch 01). Update this file at the end of every session that changes anything.
+Last updated: Thu Oct 29, 2026, 9:25am (Mobbs answers staged). Update this file at the end of every session that changes anything.
 
 ## Where we are
 Aphasia Institute pilot signed Oct 26. Nora calls 133 donors Nov 4 to 6. Appeal letter mails Nov 5 or 6. Everything else is in service of that until Nov 6.
@@ -28,7 +28,8 @@ Retell's version number is the only version number. One repo file per Retell ver
 - Pilot runs on the MVP sub-account with a tag. Separate sub-account after Nov 6.
 - Voicemail on no-answer: on (Paul's ask). Wording: Mobbs's Oct 28 edit, see aphasia/voicemail.md.
 - Office hours Mon to Fri 8 to 4 (Mobbs, Oct 28). Person requests go to ext 127. After hours Nora offers an Institute call back, never "leave a message".
-- Gratitude default is "your support this year". Program named only when the record shows it. Campaign name never spoken.
+- Gratitude is "your support this year" for everyone. No program names (Mobbs, Oct 29). Campaign name never spoken.
+- Voicemail says "in the mail or through email" (Mobbs, Oct 29).
 - Nora number +1 289 207 6218 stays unbranded for the pilot (Tan, Oct 28). Revisit "Aphasia Institute" Branded calling after Nov 6, see aphasia/nora-number-check.md.
 - Never volunteer gift amounts. Answer from giving history only if the donor asks. (Chris, Oct 26)
 - "Annual campaign" becomes "annual appeal" everywhere. (Mobbs)
@@ -41,9 +42,8 @@ Retell's version number is the only version number. One repo file per Retell ver
 | Confirm mail date | Peter | EOD Oct 27 |
 | Send 133-record file via Dropbox | Peter's data team | COI signed |
 | Segmentation plan | Peter | to Paul and Mobbs |
-| Reply to Mobbs **sent Oct 28, 10:59pm**. Offered Fri 45 min, 9 to 11am or 4 to 5pm, for the file fields call | Mobbs | her answer on Q1, Q2 and Friday time |
-| Mobbs Q1: do email-only donors get a letter? (voicemail "or through email") | Mobbs | Tan's reply |
-| Mobbs Q2: OK to say Talk, Walk 'n Roll by name when the record shows it? | Mobbs | Tan's reply |
+| Mobbs answered Oct 29: voicemail "in the mail or through email", no program names in the thank you. Staged in aphasia/retell-v7-pending-mobbs-oct29.md | Tan | Tan's go to edit Retell Draft V7 |
+| Fields call with Mobbs **Fri Oct 30, 10:30am, 45 min**. Mobbs to send invite to Tan and Chris | Mobbs | invite |
 | Peter: how many of 133 have a phone, consent to phone contact in writing, DNC removed, name split (see aphasia/dropbox-intake.md) | Peter | Friday fields call |
 | Call back list: callback_requested now means the Institute calls back. Route it to Mobbs | Tan | not built |
 | Confirm live transfer tool on outbound agent | Tan | before Nov 4 |
