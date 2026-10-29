@@ -16,6 +16,14 @@ Workflows last edited Jun 12. Both active.
 **7. Post-call does not write** line_type_confirmed, sms_opt_in, email_opt_in, cell_number_provided, ai_opt_out, transfer_requested.
 **Fix, Oct 29 10:30am (Tan's call):** copied Call Campaign to a new workflow **"Aphasia Call Campaign (Nora, DRAFT)"** (id sWX7TOtq9yN9mQS9), **inactive**. Changes vs the original: Nora number +1 289 207 6218, Aphasia Nora agent, webhook path aphasia-call-campaign, and 5 more Retell variables: program_segment (default none), line_type (from line_type_confirmed, default unknown), aphasia_office_number, aphasia_office_hours (eight to four), appeal_delivery (mail → "in the mail", email → "by email", anything else → "in the mail or through email"). Original Call Campaign untouched (checked). Nothing triggers the new one yet.
 
+**Fix 2, Oct 29 10:40am (Tan's call):** copied "Retell Post Call → GHL Update" to **"Aphasia Post Call (Nora, DRAFT)"** (id 0Vgd4a1zBZdWPyXb), **inactive**, webhook path aphasia-outbound-call-analysis. Original untouched (checked).
+- Removed: SMS follow-up (would text "call us at +1 647 000 0000", a placeholder) and the retry branch (up to 2 redials after voicemail or no answer).
+- Never sets call_scheduled. The original writes the call back time there, which is the double-call field. For Aphasia the Institute calls back, not Nora.
+- Call back still creates a GHL task (Mobbs's list). Tag is aphasia_institute_callback instead of stewardli_callback_scheduled.
+- Adds the 5 Nora fields: line_type_confirmed → line_type_confirmed. sms_opt_in yes → consent_sms TRUE, dnd_sms FALSE, preferred_channel sms, tag stewardli_consent_updated; no → consent_sms FALSE, dnd_sms TRUE. email_opt_in → consent_email TRUE/FALSE. cell_number_provided → phone_preferred. ai_opt_out → ai_call_opt_status opted_out_ai_calls, dnd_call TRUE, Call DND on, tag stewardli_dnd_requested.
+- line_type_confirmed, phone_preferred, ai_call_opt_status are written by field key, not id. Confirm in the end-to-end tests that GHL accepts that.
+- To go live: turn both drafts on, and point Nora's Retell webhook at /webhook/aphasia-outbound-call-analysis. Each needs Tan's go.
+
 **8. Retell and GHL API keys are typed into the nodes**, not stored as n8n credentials. Not urgent for the pilot. Not copied here.
 
 
