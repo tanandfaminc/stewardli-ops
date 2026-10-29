@@ -101,7 +101,7 @@ client:aphasia, campaign:cmp_aphasia_appeal_26
 ### Never imported
 - **call_scheduled. Never import a value. If the file has a column that GHL suggests mapping to it, set it to "Don't import".**
 - retry_count and campaign_status: leave blank too (same double-call bug fields).
-- dnd_call, dnd_email, dnd_sms: not imported. Any donor Peter marks do-not-call is left out of the file entirely.
+- ~~dnd_call, dnd_email, dnd_sms: not imported.~~ **Changed Oct 29:** n8n Call Campaign blocks any contact without dnd_call = FALSE. Import dnd_call, dnd_sms, dnd_email = FALSE on all 133, and consent_call = TRUE once Peter confirms consent in writing. Any donor Peter marks do-not-call is still left out of the file entirely.
 - Mailing address, full gift history, notes, dates of birth, and anything about health or aphasia programs a donor uses. Not needed for the call (consent checklist point 5).
 
 ### Before Tan says go

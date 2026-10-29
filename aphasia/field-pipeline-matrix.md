@@ -4,41 +4,54 @@ Oct 29. Why this exists: aphasia/test-plan.md (23 rows) tests the **prompt** wit
 
 Legend: ✅ confirmed · ❌ missing · ? not checked yet
 
+## n8n read, Oct 29, 10:20am (read only, nothing changed)
+Workflows last edited Jun 12. Both active.
+
+**1. Call Campaign does not call Nora for Aphasia.** It dials from +1 289 367 9557 with a different agent (agent_8612…), not the Aphasia Nora agent or the Nora number +1 289 207 6218. Sending the 133 through it today would call them with the wrong agent.
+**2. Consent gate blocks everyone by default.** A call only goes out if consent_call = "TRUE" and dnd_call = "FALSE" (text, exact). Missing dnd_call counts as TRUE, so blocked. The import plan said "dnd not imported", which would block all 133. Both must be imported.
+**3. Fields it does NOT pass to Retell:** program_segment, line_type, aphasia_office_number, aphasia_office_hours, appeal_delivery. Office and line_type have safe fallbacks in the prompt. program_segment now only picks a Step 3 question. appeal_delivery is new.
+**4. gift_summary is built inside n8n** (computed_gift_summary), not a GHL field. Fine.
+**5. Post-call already does:** call back → creates a GHL task (reads callback_requested, callback_time). Notes, outcome tags, wrong number.
+**6. Post-call also auto-sends an SMS follow-up and auto-schedules retries.** Need to check what those do for Aphasia donors before Nov 4.
+**7. Post-call does not write** line_type_confirmed, sms_opt_in, email_opt_in, cell_number_provided, ai_opt_out, transfer_requested.
+**8. Retell and GHL API keys are typed into the nodes**, not stored as n8n credentials. Not urgent for the pilot. Not copied here.
+
+
 ## 1. Fields going INTO the call (n8n Call Campaign → Retell dynamic variables)
 
 ### Same value for all 133 (set once in n8n or GHL, test once)
 | Retell variable | Value | GHL field | n8n passes it? | If empty |
 |---|---|---|---|---|
-| organization_name | Aphasia Institute | organization_name ✅ | ? | Nora has no org name. Must never be empty |
-| campaign_name | Aphasia Annual Appeal 2026 | campaign_name ✅ | ? | Fine. Never spoken |
-| aphasia_office_number | 416-226-3636 | none | ? | Prompt has a fallback |
-| aphasia_office_hours | Monday to Friday, eight to four | none | ? | Prompt has a fallback |
+| organization_name | Aphasia Institute | organization_name ✅ | ✅ | Nora has no org name. Must never be empty |
+| campaign_name | Aphasia Annual Appeal 2026 | campaign_name ✅ | ✅ | Fine. Never spoken |
+| aphasia_office_number | 416-226-3636 | none | ❌ | Prompt has a fallback |
+| aphasia_office_hours | Monday to Friday, eight to four | none | ❌ | Prompt has a fallback |
 
 ### Per donor, changes what Nora says
 | Retell variable | Peter's file | GHL field | n8n passes it? | If empty, Nora... | Test persona |
 |---|---|---|---|---|---|
-| first_name | name (split) | First Name ✅ | ? | uses customer_name, or "a supporter of Aphasia Institute" | D |
-| customer_name | name | full name ✅ | ? | see above | D |
-| donor_segment | some donors | donor_segment ✅ | ? | default thank you, "your support this year" | B |
-| program_segment | some donors | program_segment ✅ (Oct 22) | ? | base Step 3 question | B |
-| gift_summary | some donors | **❌ no field** | ? | "I don't have that detail..." | B |
-| last_gift_amount | some donors | last_gift_amount ✅ | ? | same | B |
-| last_gift_date | some donors | last_gift_date ✅ | ? | says nothing | B |
-| donor_email | where available | Email ✅ | ? | skips the email offer on landlines | C |
-| preferred_channel | probably not | preferred_channel ✅ | ? | asks "text message, phone call, or email?" | A |
-| consent_sms | probably not | **❌ no field** (mvp-field-map note) | ? | always asks SMS consent | E |
-| line_type | not in file | line_type_confirmed ✅ (all = unknown) | ? | asks "Is this a cell phone?" | A |
-| impact_statement | Mobbs (Fri) | **❌ no field** | ? | no impact line | B |
+| first_name | name (split) | First Name ✅ | ✅ | uses customer_name, or "a supporter of Aphasia Institute" | D |
+| customer_name | name | full name ✅ | ✅ (built in n8n) | see above | D |
+| donor_segment | some donors | donor_segment ✅ | ✅ | default thank you, "your support this year" | B |
+| program_segment | some donors | program_segment ✅ (Oct 22) | ❌ | base Step 3 question | B |
+| gift_summary | some donors | not needed, built in n8n from gift fields | ✅ | "I don't have that detail..." | B |
+| last_gift_amount | some donors | last_gift_amount ✅ | ✅ | same | B |
+| last_gift_date | some donors | last_gift_date ✅ | ✅ | says nothing | B |
+| donor_email | where available | Email ✅ | ✅ | skips the email offer on landlines | C |
+| preferred_channel | probably not | preferred_channel ✅ | ✅ | asks "text message, phone call, or email?" | A |
+| consent_sms | probably not | **❌ no field** (mvp-field-map note) | ✅ passes it if sent | always asks SMS consent | E |
+| line_type | not in file | line_type_confirmed ✅ (all = unknown) | ❌ (empty = unknown, which is the plan) | asks "Is this a cell phone?" | A |
+| impact_statement | Mobbs (Fri) | **❌ no field** | ✅ passes it if sent | no impact line | B |
 | appeal_delivery (new) | Peter, if he has it | **❌ appeal_channel** | **❌** | must never be empty, see appeal-channel-field.md | A, C |
 
 ### Per donor, read but barely used
 | Retell variable | GHL field | n8n? | Note |
 |---|---|---|---|
-| last_name | Last Name ✅ | ? | not spoken |
-| donor_id | **check exists** | ? | not spoken |
-| language_preference | **check exists** | ? | English only for pilot |
-| consent_call, consent_email | ✅ | ? | not spoken |
-| dnd_sms, dnd_call, dnd_email | ✅ | ? | do-not-call donors are left out of the file, so always false |
+| last_name | Last Name ✅ | ✅ | not spoken |
+| donor_id | **check exists** | ✅ | not spoken |
+| language_preference | **check exists** | ✅ | English only for pilot |
+| consent_call, consent_email | ✅ | ✅ | consent_call must be "TRUE" or the call is blocked |
+| dnd_sms, dnd_call, dnd_email | ✅ | ✅ | dnd_call must be "FALSE" or the call is blocked. Import FALSE for all 133 |
 
 ## 2. Fields coming BACK from the call (Retell post-call → n8n "Retell Post Call → GHL Update" → GHL)
 
@@ -49,14 +62,14 @@ Legend: ✅ confirmed · ❌ missing · ? not checked yet
 | email_opt_in | ✅ Oct 27 | consent_email | ❌ draft only |
 | cell_number_provided | ✅ Oct 27 | phone_preferred | ❌ draft only |
 | ai_opt_out | ✅ Oct 27 | ai_call_opt_status, dnd_call, tag | ❌ draft only |
-| callback_requested | **❌ not in Retell** | needs a field. Feeds the call back list for Mobbs | ❌ |
+| callback_requested | check Retell | creates a GHL task (with callback_time) | ✅ exists |
 | transfer_requested | **❌ not in Retell** | needs a field | ❌ |
 | annual_ask_mentioned | **❌ not in Retell** | reporting only | ❌ |
 | accessibility_flag | **❌ not in Retell** | reporting only | ❌ |
 | notes (call back time, reason) | ? | needs a field for the call back list | ❌ |
 
 ## 3. What this means
-1. **The n8n column is all "?".** Read Call Campaign and Retell Post Call (read only) to fill it. Needs Tan signed in to n8n.
+1. **n8n read Oct 29.** See findings at the top. Biggest: Call Campaign uses the wrong agent and number for Aphasia.
 2. **Missing GHL fields:** gift_summary, consent_sms, impact_statement, appeal_channel, callback_requested, transfer_requested. Decide which the pilot needs (see below).
 3. **Missing Retell post-call fields:** callback_requested, transfer_requested. Without these the call back list we promised Mobbs can't be built.
 4. **Write-back mapping** for the 5 post-call fields is still draft only.
