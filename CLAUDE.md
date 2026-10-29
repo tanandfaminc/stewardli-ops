@@ -21,7 +21,7 @@ Give each subagent a narrow brief with exact files or URLs. Subagents never touc
 ## Live system references
 - Retell agent: Aphasia - Nora (outbound), agent_98db8564069c79a15bc8f73536, number +12892076218
 - Retell agent: Aphasia - Inbound Forward to Office, agent_98e466c65ff1a8d869a9bf9237
-- Aphasia office: 416-226-3636 ext 127 (Mobbs Isaac), Mon to Fri 8:30 to 4
+- Aphasia office: 416-226-3636 ext 127 (Mobbs Isaac), Mon to Fri 8 to 4 (confirmed by Mobbs Oct 28)
 - GHL Stewardli sub-account location: OnbXdLZ96GBLRMGz6JbC
 - n8n outbound analysis webhook: outbound-call-analysis-webhook-donor
 

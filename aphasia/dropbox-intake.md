@@ -41,6 +41,33 @@ Plan checks (zero new spend, don't upgrade): if the account is on Basic, the dea
 
 ## 4. GHL import plan (MVP sub-account, OnbXdLZ96GBLRMGz6JbC)
 
+### What Mobbs says is coming (her reply, Oct 28)
+Core on every record: name, address. Where available: phone, email. Only for some donors: last gift date, giving history, donor segment, designated program or campaign.
+
+| Mobbs field | GHL field (ghl/mvp-field-map.md) | Plan |
+|---|---|---|
+| Name | First Name, Last Name (standard) | If it arrives as one "name" column, split before import. Nora's opener needs first_name |
+| Address | none | **Not imported.** Not needed for the call. Stays in Dropbox only |
+| Phone (where available) | Phone (standard) | Required for a call. Rows with no phone are left out and listed back to Peter with a count |
+| Email (where available) | Email (standard) | Optional. Nora's landline email offer only runs when it is present |
+| Last gift date (some) | last_gift_date | YYYY-MM-DD. Empty is fine |
+| Giving history (some) | last_gift_amount | Last gift amount only, number. Full history not imported. Nora never volunteers it |
+| Donor segment (some) | donor_segment | Map their labels to new / returning / lapsed. Empty is fine, Nora uses the default line |
+| Designated program or campaign (some) | program_segment (new field) | Walk and Roll → walk_and_roll, art sale → art_sale, anything else or empty → none |
+
+### Expected but not in her list
+| Field | Why it matters | Ask |
+|---|---|---|
+| first_name as its own column | Opener and closing use it | Peter, or split ourselves |
+| Phone on every row | "Where available" means some of the 133 may not be callable | Peter: how many of the 133 have a phone |
+| consent_call | We need written confirmation all records agreed to phone contact | Peter, in writing, before import |
+| consent_email, consent_sms | Nora asks SMS on the call anyway. Email opt in only if they have it | Peter, nice to have |
+| Do not call / do not contact flags | Anyone flagged must be left out of the file | Peter: confirm flagged donors are removed |
+| donor_id | Prompt reads it, not essential | Optional |
+| language_preference | Prompt reads it, not essential | Optional |
+
+The prompt (V9) treats every one of these as possibly empty.
+
 We have not seen Peter's columns yet. Left column is what we expect. Fix it against the real header row, without opening any donor rows in an AI tool.
 
 ### Columns to import

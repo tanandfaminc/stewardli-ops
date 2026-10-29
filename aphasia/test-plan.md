@@ -2,7 +2,7 @@
 
 Run before Nov 2. One tester, own phone. Reset the base set before each row. Tests V8 (in Retell Draft V7 since Oct 27).
 
-Base set: first_name Test. organization_name Aphasia Institute. donor_segment returning. program_segment walk_and_roll. line_type unknown. consent_sms FALSE. preferred_channel empty. donor_email set to a test inbox. gift_summary a test value (e.g. one gift of fifty dollars in June). aphasia_office_number 416-226-3636. aphasia_office_hours Monday to Friday, eight thirty to four.
+Base set: first_name Test. organization_name Aphasia Institute. donor_segment returning. program_segment walk_and_roll. line_type unknown. consent_sms FALSE. preferred_channel empty. donor_email set to a test inbox. gift_summary a test value (e.g. one gift of fifty dollars in June). aphasia_office_number 416-226-3636. aphasia_office_hours Monday to Friday, eight to four.
 
 After each call, check Retell post-call data, not just what Nora said.
 
