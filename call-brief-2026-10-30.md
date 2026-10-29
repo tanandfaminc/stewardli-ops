@@ -31,6 +31,7 @@ Draft V7 is what dials. It reads these fields. Ask in this order. The top block 
 | Gift info: one "last gift amount" column, or a giving history text? | Nora answers "how much did I give?" once, only if asked, only from this | last_gift_amount, gift_summary |
 | Last gift date format | Nora says it only if asked | last_gift_date |
 | Program or campaign column: what values appear? | Program names are off in the thank you (Mobbs, Oct 29). Still used to pick the Step 3 question. Mapped to walk_and_roll / art_sale / none | program_segment |
+| **Who gets the appeal by mail and who by email? Can Peter add a column?** Anyone getting both? | Voicemail will say "in the mail" or "by email" per donor (aphasia/appeal-channel-field.md). Today it says both | appeal_channel (new) |
 | Email on file: how many? Do they want email opt-in recorded? | Landline donors get "Would email be okay instead?" only when there is one on file | donor_email, consent_email |
 | Any SMS consent already on file? | If yes, Nora skips the text message question | consent_sms |
 | Is there one impact line they'd like Nora to say? (e.g. "no one is turned away for not being able to pay") | Prompt supports it. Currently empty. Must be a fact they stand behind | impact_statement |
