@@ -1,6 +1,6 @@
 # STATUS: read this first
 
-Last updated: Thu Oct 29, 2026, 10:05am (Mobbs answers in Retell Draft V7). Update this file at the end of every session that changes anything.
+Last updated: Thu Oct 29, 2026, 10:45am (Aphasia pipeline live for testing). Update this file at the end of every session that changes anything.
 
 ## Where we are
 Aphasia Institute pilot signed Oct 26. Nora calls 133 donors Nov 4 to 6. Appeal letter mails Nov 5 or 6. Everything else is in service of that until Nov 6.
@@ -8,10 +8,10 @@ Aphasia Institute pilot signed Oct 26. Nora calls 133 donors Nov 4 to 6. Appeal 
 ## Live systems, current state
 | System | State | Changed by |
 |---|---|---|
-| Retell agent "Aphasia - Nora (outbound)" | **Live calls run on Draft V7** (number set to "Latest Created"). Draft V7 = aphasia/nora-prompt-retell-v7.md (Mobbs's Oct 28 edits, plus her Oct 29 answers entered 10:01am: voicemail "mail or through email", no program names) + Mobbs's voicemail + 5 post-call fields (line_type_confirmed, sms_opt_in, email_opt_in, cell_number_provided, ai_opt_out). Entered Oct 27 and Oct 28, 11:10pm, Tan's go-ahead (nothing dials before Nov 4). **Not published.** Last published is V6 (Oct 15) = aphasia/nora-prompt-retell-v6.md. The Oct 16 call to Mobbs ran Draft V7 while it still held the V6 prompt (aphasia/v7-mobbs-call-review.md). Editing the draft changes live calls. | Claude via Chrome, Oct 27 and 28 |
+| Retell agent "Aphasia - Nora (outbound)" | **Live calls run on Draft V7** (number set to "Latest Created"). Agent webhook changed Oct 29 10:40am from outbound-call-analysis-webhook-donor to **aphasia-outbound-call-analysis** (Tan's go). Draft V7 = aphasia/nora-prompt-retell-v7.md (Mobbs's Oct 28 edits, plus her Oct 29 answers entered 10:01am: voicemail "mail or through email", no program names) + Mobbs's voicemail + 5 post-call fields (line_type_confirmed, sms_opt_in, email_opt_in, cell_number_provided, ai_opt_out). Entered Oct 27 and Oct 28, 11:10pm, Tan's go-ahead (nothing dials before Nov 4). **Not published.** Last published is V6 (Oct 15) = aphasia/nora-prompt-retell-v6.md. The Oct 16 call to Mobbs ran Draft V7 while it still held the V6 prompt (aphasia/v7-mobbs-call-review.md). Editing the draft changes live calls. | Claude via Chrome, Oct 27 and 28 |
 | Retell agent "Aphasia - Inbound Forward to Office" | Live, transfers to 416-226-3636 ext 127 | Tan, Oct 14 |
-| GHL MVP sub-account | 3 new fields (ai_call_opt_status, line_type_confirmed, program_segment) + 2 tags (client:aphasia, campaign:cmp_aphasia_appeal_26) created Oct 22. No workflows changed. No contacts imported. | Claude via Chrome, Oct 22 |
-| n8n | 2 new inactive workflows (Oct 29): "Aphasia Call Campaign (Nora, DRAFT)" and "Aphasia Post Call (Nora, DRAFT)" (no SMS follow-up, no retries, no call_scheduled, 5 Nora fields mapped). Existing workflows unchanged. Call Campaign uses a different agent and number, not for Aphasia. | Claude via Chrome, Oct 29, Tan's go |
+| GHL MVP sub-account | Oct 29: field **Appeal Channel** (appeal_channel: mail, email, unknown). Workflow **"Aphasia Nora Calls" PUBLISHED**: tag aphasia_call_now added → webhook to n8n aphasia-call-campaign. Existing workflows unchanged. Donor Campaign fires on every new contact: Aphasia imports carry tag stewardli_campaign_started and blank campaign_id to skip it. Oct 22: ai_call_opt_status, line_type_confirmed, program_segment + tags client:aphasia, campaign:cmp_aphasia_appeal_26. No contacts imported. | Claude via Chrome, Tan's go |
+| n8n | **2 Aphasia workflows ACTIVE (Oct 29, 10:38am, Tan's go):** "Aphasia Call Campaign (Nora, DRAFT)" and "Aphasia Post Call (Nora, DRAFT)" (no SMS follow-up, no retries, no call_scheduled, 5 Nora fields mapped). Names still say DRAFT. Existing workflows unchanged. Call Campaign uses a different agent and number, not for Aphasia. | Claude via Chrome, Oct 29, Tan's go |
 | Twilio | Unchanged. Billing owner unverified. | |
 | Dropbox tan.h@stewardli.ai (Basic, free) | File request "Aphasia Institute - Annual Appeal 2026 - Pilot Data" open, no deadline or password (Basic). Folder of same name, 0 items. Tan owner, chris.n@stewardli.ai can view. No shared link. | Tan + Claude via Chrome, Oct 26 |
 

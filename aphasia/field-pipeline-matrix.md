@@ -117,3 +117,13 @@ Import with tag stewardli_campaign_started AND campaign_id blank. Either one end
 
 ### Aphasia trigger (to build, needs Tan's go)
 New GHL workflow "Aphasia Nora Calls": trigger Tag Added = aphasia_call_now → Webhook POST https://automation.stewardli.ai/webhook/aphasia-call-campaign. Import does not dial. Calling starts only when Tan adds aphasia_call_now to a batch.
+
+## Live for testing, Oct 29 10:45am (Tan's go)
+1. GHL field Appeal Channel created.
+2. GHL workflow "Aphasia Nora Calls" published: tag aphasia_call_now → POST https://automation.stewardli.ai/webhook/aphasia-call-campaign.
+3. n8n "Aphasia Call Campaign" and "Aphasia Post Call" active.
+4. Retell Nora agent webhook → /webhook/aphasia-outbound-call-analysis. Retell post-call fields already include donor_intent, connection_status, callback_time_window, sms_consent, preferred_channel, dnd_call, wrong_number, user_reached + the 5 new ones.
+
+How a call starts now: contact in GHL (import with stewardli_campaign_started tag, consent_call TRUE, dnd_call FALSE, campaign_id blank) → add tag aphasia_call_now → GHL webhook → n8n Aphasia Call Campaign → Retell Nora from +1 289 207 6218 → post-call → n8n Aphasia Post Call → GHL.
+
+Note: Nora's Oct 16 style test calls from the Retell dashboard now also report to the Aphasia post-call workflow. They carry no contact_id, so it stops at "Contact ID Exists".
