@@ -83,3 +83,7 @@ Any donor can be missing segment, program, gift date, gift history or email. Nor
 
 ## Oct 29 2:10pm update (after test C rerun)
 - Step 3: if the donor says yes to "anything you'd like to know about how your support is being used?", answer in one or two sentences before moving on.
+
+## Oct 29 2:40pm update (after test D)
+- Step 5 rewritten. Texts are asked once, in Step 2B, never again. The old Step 5 said "This step is CRITICAL. You MUST ask for SMS consent", which overrode every skip rule (texts asked twice on tests B and D). All 10 references to Step 5 updated so nothing contradicts.
+- Line type mobile in the file: no "Is this a cell phone?", straight to the text question.
