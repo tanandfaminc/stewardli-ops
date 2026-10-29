@@ -61,3 +61,10 @@ Any donor can be missing segment, program, gift date, gift history or email. Nor
 ## Oct 29 update (Mobbs's answers, in Retell Draft V7 at 10:01am)
 - Thank you says "your support this year" for everyone. No program names, including the art sale.
 - Voicemail: "Your annual appeal letter will be arriving in the mail or through email soon."
+
+## Oct 29 11:10am update (after test A, Tan's go, in Retell Draft V7)
+- Removed the phonetic spelling from the prompt. Nora read it aloud on test A. Pronunciation stays in Retell's pronunciation dictionary (Speech settings), which already had Aphasia, aphasia, Stewardli. If corrected, Nora says "Sorry about that." and carries on.
+- Step 2B made explicit: after the appeal mention, the next question is "Is this a cell phone?" when line type is unknown. Nora skipped it on test A.
+- Name rule: never "Thanks" or "Okay" followed by the name.
+- Critical Rules: never read or explain pronunciation, never "Thanks for letting me know", no dashes even in explanations.
+- Segment: GHL uses new / active / lapsed / monthly / major / unknown. active, monthly, major now = returning.
