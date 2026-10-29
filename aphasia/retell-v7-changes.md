@@ -68,3 +68,9 @@ Any donor can be missing segment, program, gift date, gift history or email. Nor
 - Name rule: never "Thanks" or "Okay" followed by the name.
 - Critical Rules: never read or explain pronunciation, never "Thanks for letting me know", no dashes even in explanations.
 - Segment: GHL uses new / active / lapsed / monthly / major / unknown. active, monthly, major now = returning.
+
+## Oct 29 11:20am update (after test B, in Retell Draft V7)
+- Texts never asked twice. If asked in Step 2B, Step 5 is skipped.
+- Gift question with nothing on file: gives the full office number with extension one two seven (Tan's note).
+- Step 4: only "I see we have..." when the preferred channel field has a value. Nora invented "phone call" on test B with the field empty.
+- No check-in questions after statements ("Let me know if that works", "Is that okay?", "Let me know if that makes sense"). "Thanks for checking" banned.
