@@ -14,9 +14,9 @@ This is a list and drafts. Nothing here connects or messages anyone. You send ev
 | role | Their role as that page shows it |
 | score | Fit, 4 or 5 only (see below) |
 | source URL | Where the name and role came from. Check it before you send |
+| note v1, v2, v3 | Three connection notes, each under 300 characters |
 
 Rows to check first in batch 01: Parkdale (ED named in a 2023 source; CanadaHelps says Kathleen, notes say Kitty) and Ernestine's (Laverne Blake was interim ED as of Oct 2025).
-| note v1, v2, v3 | Three connection notes, each under 300 characters |
 
 ## How to use it (10 minutes a day)
 1. Open the CSV in Google Sheets. Add two columns of your own: `sent` (date) and `reply`.
