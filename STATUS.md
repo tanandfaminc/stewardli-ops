@@ -43,7 +43,7 @@ Retell's version number is the only version number. One repo file per Retell ver
 | Send 133-record file via Dropbox | Peter's data team | COI signed |
 | Segmentation plan | Peter | to Paul and Mobbs |
 | Mobbs answered Oct 29: voicemail "in the mail or through email", no program names in the thank you. Staged in aphasia/retell-v7-pending-mobbs-oct29.md | Tan | Tan's go to edit Retell Draft V7 |
-| Fields call with Mobbs **Fri Oct 30, 10:30am, 45 min**. Mobbs to send invite to Tan and Chris | Mobbs | invite |
+| Fields call with Mobbs **Fri Oct 30, 10:30am, 30 min**. Prep in call-brief-2026-10-30.md | Tan | Tan sends invite |
 | Peter: how many of 133 have a phone, consent to phone contact in writing, DNC removed, name split (see aphasia/dropbox-intake.md) | Peter | Friday fields call |
 | Call back list: callback_requested now means the Institute calls back. Route it to Mobbs | Tan | not built |
 | Confirm live transfer tool on outbound agent | Tan | before Nov 4 |
