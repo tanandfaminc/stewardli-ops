@@ -1,4 +1,4 @@
-# Reply to Mobbs (DRAFT, not sent)
+# Reply to Mobbs (SENT by Tan Oct 28, 10:59pm, numbered questions, Friday 9 to 11am or 4 to 5pm offered)
 
 To: misaac@aphasia.ca
 CC: Chris

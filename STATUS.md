@@ -1,6 +1,6 @@
 # STATUS: read this first
 
-Last updated: Wed Oct 28, 2026, 10:55pm ET. Update this file at the end of every session that changes anything.
+Last updated: Wed Oct 28, 2026, 11:00pm ET. Update this file at the end of every session that changes anything.
 
 ## Where we are
 Aphasia Institute pilot signed Oct 26. Nora calls 133 donors Nov 4 to 6. Appeal letter mails Nov 5 or 6. Everything else is in service of that until Nov 6.
@@ -34,7 +34,7 @@ Aphasia Institute pilot signed Oct 26. Nora calls 133 donors Nov 4 to 6. Appeal 
 | Send 133-record file via Dropbox | Peter's data team | COI signed |
 | Segmentation plan | Peter | to Paul and Mobbs |
 | Mobbs reply received Oct 28 (aphasia/mobbs-reply-2026-10-28.md). V9 drafted: aphasia/nora-prompt-v9.md, plain English diff in aphasia/v9-changes.md | Tan | Read v9-changes.md and say go. Then V9 into Retell Draft V7 in a separate step |
-| Send reply to Mobbs (aphasia/reply-to-mobbs-draft.md). Fill Friday time | Tan | nothing |
+| Reply to Mobbs **sent Oct 28, 10:59pm**. Offered Fri 45 min, 9 to 11am or 4 to 5pm, for the file fields call | Mobbs | her answer on Q1, Q2 and Friday time |
 | Mobbs Q1: do email-only donors get a letter? (voicemail "or through email") | Mobbs | Tan's reply |
 | Mobbs Q2: OK to say Talk, Walk 'n Roll by name when the record shows it? | Mobbs | Tan's reply |
 | Peter: how many of 133 have a phone, consent to phone contact in writing, DNC removed, name split (see aphasia/dropbox-intake.md) | Peter | Friday fields call |
