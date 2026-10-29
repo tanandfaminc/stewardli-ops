@@ -74,3 +74,9 @@ Any donor can be missing segment, program, gift date, gift history or email. Nor
 - Gift question with nothing on file: gives the full office number with extension one two seven (Tan's note).
 - Step 4: only "I see we have..." when the preferred channel field has a value. Nora invented "phone call" on test B with the field empty.
 - No check-in questions after statements ("Let me know if that works", "Is that okay?", "Let me know if that makes sense"). "Thanks for checking" banned.
+
+## Oct 29 2:05pm update (after test C, in Retell Draft V7)
+- Line type landline: skip "Is this a cell phone?", go straight to the cell number question. Appeal mention is its own turn, wait for a reply before Step 2B.
+- Cell number "yes" with no digits: ask "What's the number?" before moving on.
+- LANDLINE RULE at the top of Step 5: landline and no cell number given = never ask about texts.
+- Personal connection to aphasia: "Thank you for sharing that." once, same tone and pace, no accessible mode. No filler words (um, uh).
