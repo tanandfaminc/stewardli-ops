@@ -22,6 +22,7 @@ Aphasia Institute pilot signed Oct 26. Nora calls 133 donors Nov 4 to 6. Appeal 
 - Voicemail on no-answer: on (Paul's ask). Wording: Mobbs's Oct 28 edit, see aphasia/voicemail.md.
 - Office hours Mon to Fri 8 to 4 (Mobbs, Oct 28). Person requests go to ext 127. After hours Nora offers an Institute call back, never "leave a message".
 - Gratitude default is "your support this year". Program named only when the record shows it. Campaign name never spoken.
+- Nora number +1 289 207 6218 stays unbranded for the pilot (Tan, Oct 28). Revisit "Aphasia Institute" Branded calling after Nov 6, see aphasia/nora-number-check.md.
 - Never volunteer gift amounts. Answer from giving history only if the donor asks. (Chris, Oct 26)
 - "Annual campaign" becomes "annual appeal" everywhere. (Mobbs)
 - Donor file arrives via Dropbox after NDA + Chris's COI. Delete Dec 6.
@@ -41,7 +42,6 @@ Aphasia Institute pilot signed Oct 26. Nora calls 133 donors Nov 4 to 6. Appeal 
 | Call back list: callback_requested now means the Institute calls back. Route it to Mobbs | Tan | not built |
 | Confirm live transfer tool on outbound agent | Tan | before Nov 4 |
 | Add V9 test rows (after hours 3:55/4:05/Sat, empty program, empty first_name, empty gift record) to aphasia/test-plan.md | Tan + Claude | V9 in draft |
-| Caller ID for Nora number +1 289 207 6218: unbranded today (only Stewardli main is branded, as "Stewardli.ai"). Pick an option in aphasia/nora-number-check.md | Tan | Decide before Nov 4 |
 | Test Retell V8 by phone (aphasia/test-plan.md, 15 rows, log in aphasia/test-log-2026-10-26.md) | Tan + Claude | V8 is in Draft V7. Must finish before Nov 2 |
 | n8n: map the 5 new post-call fields to GHL (see ghl/mvp-field-map.md) | Tan approves | Draft only. Live workflow |
 | Publish V9 and keep the number on it | Tan | V9 approved, tests passing |
