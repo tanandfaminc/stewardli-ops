@@ -55,6 +55,7 @@ Retell's version number is the only version number. One repo file per Retell ver
 | Send reply to Peter with file request link | Tan | Chris's COI + NDA signed. Draft in aphasia/dropbox-intake.md |
 | Dec 6 delete reminder on Tan's and Chris's calendars | Tan | |
 | Nov 1 in-person: fill hours table and section E in agenda-nov1-inperson.md | Tan | before Sun Nov 1 |
+| **Retell credit balance exhausted (402) Oct 29 2:39pm. No calls can go out.** Top up before more tests and before Nov 4. Pilot needs about $60 to $75. Consider low-balance alert or auto top-up | Tan / Chris | Tan's yes on spend |
 | Retell billing admin or invoice screenshot | Chris | |
 | GHL plan and amount | Chris | |
 | Nora demo repo access | Chris | since Oct 20 |
