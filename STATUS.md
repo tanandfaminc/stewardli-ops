@@ -11,7 +11,7 @@ Aphasia Institute pilot signed Oct 26. Nora calls 133 donors Nov 4 to 6. Appeal 
 | Retell agent "Aphasia - Nora (outbound)" | **Live calls run on Draft V7** (number set to "Latest Created"). Draft V7 = aphasia/nora-prompt-retell-v7.md (Mobbs's Oct 28 edits, plus her Oct 29 answers entered 10:01am: voicemail "mail or through email", no program names) + Mobbs's voicemail + 5 post-call fields (line_type_confirmed, sms_opt_in, email_opt_in, cell_number_provided, ai_opt_out). Entered Oct 27 and Oct 28, 11:10pm, Tan's go-ahead (nothing dials before Nov 4). **Not published.** Last published is V6 (Oct 15) = aphasia/nora-prompt-retell-v6.md. The Oct 16 call to Mobbs ran Draft V7 while it still held the V6 prompt (aphasia/v7-mobbs-call-review.md). Editing the draft changes live calls. | Claude via Chrome, Oct 27 and 28 |
 | Retell agent "Aphasia - Inbound Forward to Office" | Live, transfers to 416-226-3636 ext 127 | Tan, Oct 14 |
 | GHL MVP sub-account | 3 new fields (ai_call_opt_status, line_type_confirmed, program_segment) + 2 tags (client:aphasia, campaign:cmp_aphasia_appeal_26) created Oct 22. No workflows changed. No contacts imported. | Claude via Chrome, Oct 22 |
-| n8n | Unchanged. SMS consent mapping still unverified (see ghl/mvp-field-map.md note). | |
+| n8n | New inactive workflow "Aphasia Call Campaign (Nora, DRAFT)" (Oct 29). Existing workflows unchanged. Call Campaign uses a different agent and number, not for Aphasia. | Claude via Chrome, Oct 29, Tan's go |
 | Twilio | Unchanged. Billing owner unverified. | |
 | Dropbox tan.h@stewardli.ai (Basic, free) | File request "Aphasia Institute - Annual Appeal 2026 - Pilot Data" open, no deadline or password (Basic). Folder of same name, 0 items. Tan owner, chris.n@stewardli.ai can view. No shared link. | Tan + Claude via Chrome, Oct 26 |
 
@@ -42,7 +42,7 @@ Retell's version number is the only version number. One repo file per Retell ver
 | Confirm mail date | Peter | EOD Oct 27 |
 | Send 133-record file via Dropbox | Peter's data team | COI signed |
 | Segmentation plan | Peter | to Paul and Mobbs |
-| **n8n read Oct 29 (aphasia/field-pipeline-matrix.md):** Call Campaign dials with a different agent and number, not Aphasia Nora. Consent gate blocks anyone without consent_call TRUE + dnd_call FALSE (import plan fixed). Post-call auto SMS follow-up and auto retries need checking for Aphasia. 5 new post-call fields not written back | Tan | decide how Aphasia calls get triggered |
+| n8n: **"Aphasia Call Campaign (Nora, DRAFT)"** created Oct 29, inactive. Copy of Call Campaign with Nora agent + number and the 5 missing variables (aphasia/field-pipeline-matrix.md). Next: decide what triggers it (GHL workflow or manual), check post-call auto SMS + auto retry for Aphasia, map 5 post-call fields | Tan + Claude | Tan approves before it is turned on |
 | New field appeal_channel (mail / email) so voicemail names the right one. Spec in aphasia/appeal-channel-field.md. Voicemail says "mail or through email" until built | Tan | Mobbs Fri: does the file have it |
 | Fields call with Mobbs **Fri Oct 30, 10:30am, 30 min**. Prep in call-brief-2026-10-30.md | Tan | Tan sends invite |
 | Peter: how many of 133 have a phone, consent to phone contact in writing, DNC removed, name split (see aphasia/dropbox-intake.md) | Peter | Friday fields call |

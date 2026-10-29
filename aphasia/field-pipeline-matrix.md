@@ -14,6 +14,8 @@ Workflows last edited Jun 12. Both active.
 **5. Post-call already does:** call back → creates a GHL task (reads callback_requested, callback_time). Notes, outcome tags, wrong number.
 **6. Post-call also auto-sends an SMS follow-up and auto-schedules retries.** Need to check what those do for Aphasia donors before Nov 4.
 **7. Post-call does not write** line_type_confirmed, sms_opt_in, email_opt_in, cell_number_provided, ai_opt_out, transfer_requested.
+**Fix, Oct 29 10:30am (Tan's call):** copied Call Campaign to a new workflow **"Aphasia Call Campaign (Nora, DRAFT)"** (id sWX7TOtq9yN9mQS9), **inactive**. Changes vs the original: Nora number +1 289 207 6218, Aphasia Nora agent, webhook path aphasia-call-campaign, and 5 more Retell variables: program_segment (default none), line_type (from line_type_confirmed, default unknown), aphasia_office_number, aphasia_office_hours (eight to four), appeal_delivery (mail → "in the mail", email → "by email", anything else → "in the mail or through email"). Original Call Campaign untouched (checked). Nothing triggers the new one yet.
+
 **8. Retell and GHL API keys are typed into the nodes**, not stored as n8n credentials. Not urgent for the pilot. Not copied here.
 
 
