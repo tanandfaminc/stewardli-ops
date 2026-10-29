@@ -1,6 +1,6 @@
 # Nora phone test plan
 
-Run before Nov 2. One tester, own phone. Reset the base set before each row. Tests V9 (in Retell Draft V7 since Oct 28, 11:10pm). Rows 16 to 18 must be dialed at those real clock times, because Nora reads the current Toronto time.
+Run before Nov 2. One tester, own phone. Reset the base set before each row. Tests Retell Draft V7 (prompt aphasia/nora-prompt-retell-v7.md, in Retell since Oct 28, 11:10pm). Rows 16 to 18 must be dialed at those real clock times, because Nora reads the current Toronto time.
 
 Base set: first_name Test. organization_name Aphasia Institute. donor_segment returning. program_segment walk_and_roll. line_type unknown. consent_sms FALSE. preferred_channel empty. donor_email set to a test inbox. gift_summary a test value (e.g. one gift of fifty dollars in June). aphasia_office_number 416-226-3636. aphasia_office_hours Monday to Friday, eight to four.
 

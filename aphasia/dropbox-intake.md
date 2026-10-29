@@ -66,7 +66,7 @@ Core on every record: name, address. Where available: phone, email. Only for som
 | donor_id | Prompt reads it, not essential | Optional |
 | language_preference | Prompt reads it, not essential | Optional |
 
-The prompt (V9) treats every one of these as possibly empty.
+The prompt (Retell V7) treats every one of these as possibly empty.
 
 We have not seen Peter's columns yet. Left column is what we expect. Fix it against the real header row, without opening any donor rows in an AI tool.
 

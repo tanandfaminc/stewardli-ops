@@ -21,4 +21,4 @@ Variants A and B ("supporting the walk") are gone. Not everyone on the list gave
 
 ## To apply in Retell (only after Tan says go)
 - Agent > Voicemail detection > leave message. Paste the line above.
-- Must match the Voicemail section of aphasia/nora-prompt-v9.md word for word.
+- Must match the Voicemail section of aphasia/nora-prompt-retell-v7.md word for word.

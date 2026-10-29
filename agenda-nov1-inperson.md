@@ -12,8 +12,8 @@ Replaces agenda-fred-chris-tan-inperson.md. ~100 min. Three days before Nora dia
 ---
 
 ## 1. Where we are (10 min, Tan)
-- Aphasia: V8 prompt, voicemail and 5 post-call fields in Retell, not published. Test plan 15 rows. Donor file arrives via Dropbox after COI + NDA, deleted Dec 6.
-- Still open before Nov 4: V8 phone tests, n8n mapping of the new fields, caller ID decision, Mobbs's script edits, Twilio billing owner.
+- Aphasia: Retell Draft V7 has the new prompt (with Mobbs's Oct 28 edits), voicemail and 5 post-call fields, not published. Test plan 23 rows. Donor file arrives via Dropbox after COI + NDA, deleted Dec 6.
+- Still open before Nov 4: phone tests, n8n mapping of the new fields, caller ID decision, Mobbs's script edits, Twilio billing owner.
 - Cost actuals (cost-report/actuals/README.md): Retell USD 40 and Twilio USD 79 over 14 months. Under USD 9 a month variable. GHL at USD 297/mo is the real cost line.
 - Pilot proves experience and ops, not gift lift. 133 is too small for a causal read (aphasia/pilot-stats.md).
 

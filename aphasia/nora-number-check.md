@@ -10,7 +10,7 @@ Checked Oct 27, 2026, read-only, in Retell and the Twilio console (account Stewa
 | Name | Twilio - Aphasia Institute (Nora) |
 | Provider | Custom telephony (Twilio SIP) |
 | Inbound | Aphasia - Inbound Forward to Office, Latest Created. Fallback +1 416 226 3636 |
-| Outbound | Aphasia - Nora (outbound), Latest Created. Always uses the newest draft, so it uses V8 now |
+| Outbound | Aphasia - Nora (outbound), Latest Created. Always uses the newest draft, so it uses Draft V7 (aphasia/nora-prompt-retell-v7.md) |
 | SMS add-on | Not set up |
 
 ## Twilio

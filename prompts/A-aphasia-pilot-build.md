@@ -1,5 +1,7 @@
 # Prompt A: Aphasia pilot build
 
+> Done. File names below are pre-Oct 28. nora-prompt-live.md is now aphasia/nora-prompt-retell-v6.md, "v9" is aphasia/nora-prompt-retell-v7.md, old v8 drafts are in aphasia/archive/. See STATUS.md "Version rule".
+
 You are the lead engineer on the Aphasia Institute pilot for Stewardli. Calls go out Nov 2 to 6, 2026. Peter Blakely (Aphasia) has the donor file: ~130 names with phone numbers out of ~1,400 appeal recipients. No A/B split, we call all 130. Stack and rules are in CLAUDE.md. Current live Nora prompt is in aphasia/nora-prompt-live.md.
 
 Work as an orchestrator. You plan, review and decide. Delegate research and drafting with the Agent tool: model "sonnet" for anything that needs reasoning, model "haiku" for lookups, list-making and formatting. Narrow briefs, exact files. Never let a subagent change a live system. You make every change yourself after reviewing, and you stop and ask before anything that costs money or touches a published agent.

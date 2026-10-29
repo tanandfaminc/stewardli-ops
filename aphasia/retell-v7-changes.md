@@ -1,7 +1,9 @@
-# Nora V9: what changed from V8 (plain English)
+# Nora Retell V7: what changed from the Oct 27 draft (plain English)
+
+Old repo names: this was "V9" and the Oct 27 draft was "V8". See aphasia/archive/README.md.
 
 Oct 28, 2026. Based on Mobbs's and Paul's notes of Oct 28.
-Full prompt: aphasia/nora-prompt-v9.md. **Not in Retell yet.** It goes into the draft only after Tan reads this and says go.
+Full prompt: aphasia/nora-prompt-retell-v7.md. In Retell Draft V7 since Oct 28, 11:10pm (Tan's go). Not published.
 
 ## What Nora says differently
 

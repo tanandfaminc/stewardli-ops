@@ -1,5 +1,7 @@
 # Prompt J: Fold Mobbs's reply into Nora V8
 
+> Done. File names below are pre-Oct 28. nora-prompt-live.md is now aphasia/nora-prompt-retell-v6.md, "v9" is aphasia/nora-prompt-retell-v7.md, old v8 drafts are in aphasia/archive/. See STATUS.md "Version rule".
+
 Mobbs (Aphasia Institute, Coordinator Communications & Fund Development, ext 127) replied to Tan's Oct 26 email asking for a sample script, voicemail and transfer rules, and what's in the donor file. Her reply is in aphasia/mobbs-reply-2026-10-28.md (and any attachment alongside it). Read STATUS.md first, then her reply, then aphasia/nora-prompt-v8.md (what is currently in Retell Draft V7, not published), aphasia/voicemail.md, aphasia/branching-spec.md, aphasia/v7-mobbs-call-review.md.
 
 Rules that do not move whatever she says: never volunteer gift amounts (Chris, Oct 26); annual appeal not annual campaign; ONE THING PER TURN; Accessible Conversation rules; no dashes in spoken text; the call is not a fundraising ask.
