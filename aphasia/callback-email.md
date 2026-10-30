@@ -19,6 +19,10 @@ Gmail node, sends as tan.h@stewardli.ai. Google Cloud: My First Project (certain
 Test send Oct 30 10:45am to tan.h@stewardli.ai only ("TEST (to Tan only)" subject, the "none today" version). Recipient then set back to {{ $json.to }} = misaac@aphasia.ca. Still inactive.
 Google Cloud project "Stewardli n8n Integration" is empty and flagged unused. Left alone.
 
+## Look and test mode (Oct 30, 11am)
+Branded HTML email (navy header, one card per donor: name with last initial, tap-to-call phone, best time, what they said). Code: aphasia/n8n/callback-digest.js, mirrored in the "Build digest" node.
+**Run manually (test)** = 4 made-up donors, subject "TEST (sample data)", sent to tan.h@stewardli.ai only. The 5:15pm schedule uses real GHL data and goes to Mobbs. Sample test sent Oct 30.
+
 ## Not done
 1. Tan to confirm the test email looks right in his inbox.
 2. **Trigger risk.** A task is created only when Retell's donor_intent comes back as "callback_requested". The prompt says "set callback_requested". Test E (after hours) must confirm the donor_intent value.
