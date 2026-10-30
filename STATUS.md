@@ -50,7 +50,7 @@ Retell's version number is the only version number. One repo file per Retell ver
 | Peter sending file later Oct 30 (replied 10:04am). When his fields arrive: ask him to drop address and combined name, last name initial only, keep email if available | Tan | Peter's file |
 | Confirm start date: Chris said Monday first batch, plan says Nov 4 to 6, letter mails Nov 5 or 6 | Chris / Tan | |
 | Split 133 into 2 to 3 daily batches (tag aphasia_call_now per batch) | Tan + Claude | file |
-| Daily call back email to Mobbs: n8n draft built Oct 30, inactive (aphasia/callback-email.md). Needs an email sender, and test E to confirm call back tasks get created | Tan | pick sender |
+| Daily call back email to Mobbs: n8n draft built Oct 30, inactive (aphasia/callback-email.md). Gmail tan.h@stewardli.ai connected, test sent to Tan only Oct 30. Needs test E to confirm call back tasks get created. Turn on for calling days only | Tan | check test email, test E |
 | Mid-week check-in with Mobbs | Tan | Mobbs's windows |
 | 30-day follow-up sequence (text or email by call result) | Chris | scope not agreed |
 | Peter: how many of 133 have a phone, consent to phone contact in writing, DNC removed, name split (see aphasia/dropbox-intake.md) | Peter | Friday fields call |
