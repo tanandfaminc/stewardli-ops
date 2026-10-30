@@ -24,6 +24,6 @@ Branded HTML email (stewardli.ai logo, green #457064 and copper #C88F6A from the
 **Run manually (test)** = 4 made-up donors, subject "TEST (sample data)", sent to tan.h@stewardli.ai only. The 5:15pm schedule uses real GHL data and goes to Mobbs. Sample test sent Oct 30.
 
 ## Not done
-1. Tan to confirm the test email looks right in his inbox.
+1. ~~Tan to confirm the test email looks right.~~ Locked by Tan Oct 30, 10:56am.
 2. **Trigger risk.** A task is created only when Retell's donor_intent comes back as "callback_requested". The prompt says "set callback_requested". Test E (after hours) must confirm the donor_intent value.
 3. Turn on only for calling days. Turn off after the pilot.
