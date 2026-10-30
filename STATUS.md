@@ -30,6 +30,7 @@ Retell's version number is the only version number. One repo file per Retell ver
 - Office hours Mon to Fri 8 to 4 (Mobbs, Oct 28). Person requests go to ext 127. After hours Nora offers an Institute call back, never "leave a message".
 - Gratitude is "your support this year" for everyone. No program names (Mobbs, Oct 29). Campaign name never spoken.
 - Voicemail says "in the mail or through email" (Mobbs, Oct 29).
+- "Thank you for your support", no "this year" (Mobbs, Oct 30). Data minimized: first name, last initial, phone. Call back list emailed to Mobbs daily.
 - Nora number +1 289 207 6218 stays unbranded for the pilot (Tan, Oct 28). Revisit "Aphasia Institute" Branded calling after Nov 6, see aphasia/nora-number-check.md.
 - Never volunteer gift amounts. Answer from giving history only if the donor asks. (Chris, Oct 26)
 - "Annual campaign" becomes "annual appeal" everywhere. (Mobbs)
@@ -44,7 +45,14 @@ Retell's version number is the only version number. One repo file per Retell ver
 | Segmentation plan | Peter | to Paul and Mobbs |
 | n8n: **"Aphasia Call Campaign (Nora, DRAFT)"** created Oct 29, inactive. Copy of Call Campaign with Nora agent + number and the 5 missing variables (aphasia/field-pipeline-matrix.md). Next: decide what triggers it (GHL workflow or manual), post-call copy done (Aphasia Post Call). Then: GHL trigger + import template, point Nora's Retell webhook at aphasia-outbound-call-analysis, 5 end-to-end tests | Tan + Claude | Tan approves before it is turned on |
 | New field appeal_channel (mail / email) so voicemail names the right one. Spec in aphasia/appeal-channel-field.md. Voicemail says "mail or through email" until built | Tan | Mobbs Fri: does the file have it |
-| Fields call with Mobbs **Fri Oct 30, 10:30am, 30 min**. Prep in call-brief-2026-10-30.md | Tan | Tan sends invite |
+| Mobbs call done Oct 30 (aphasia/mobbs-call-2026-10-30.md) | done | |
+| Retell: drop "this year" from thank you, "for what?" line and voicemail (Mobbs Oct 30) | Claude | Tan's go |
+| Email Peter the exact fields: first name, last name initial, phone (+ email if we keep the email offer). No address, no combined name | Tan / Chris | today |
+| Confirm start date: Chris said Monday first batch, plan says Nov 4 to 6, letter mails Nov 5 or 6 | Chris / Tan | |
+| Split 133 into 2 to 3 daily batches (tag aphasia_call_now per batch) | Tan + Claude | file |
+| Daily call back email to Mobbs (n8n digest of GHL tasks tagged aphasia_institute_callback) | Tan + Claude | not built |
+| Mid-week check-in with Mobbs | Tan | Mobbs's windows |
+| 30-day follow-up sequence (text or email by call result) | Chris | scope not agreed |
 | Peter: how many of 133 have a phone, consent to phone contact in writing, DNC removed, name split (see aphasia/dropbox-intake.md) | Peter | Friday fields call |
 | Call back list: callback_requested now means the Institute calls back. Route it to Mobbs | Tan | not built |
 | Confirm live transfer tool on outbound agent | Tan | before Nov 4 |
