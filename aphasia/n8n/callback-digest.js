@@ -41,60 +41,57 @@ if (sample) {
 const esc = s => String(s).replace(/[&<>"]/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[ch]));
 const fmtPhone = p => { const d = String(p).replace(/\D/g, '').replace(/^1(?=\d{10}$)/, ''); return d.length === 10 ? d.slice(0, 3) + '-' + d.slice(3, 6) + '-' + d.slice(6) : String(p); };
 
-// Brand
-const ink = '#14324A', teal = '#1F7A74', soft = '#EEF5F4', line = '#DCE6E5', muted = '#5B6B76', bg = '#F4F6F7';
-const font = "-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif";
+// Brand (stewardli.ai logo and site): green #457064, teal #3E7C78, copper #C88F6A, ink #1F2D2C, cream #F7F6F2
+const green = '#457064', teal = '#3E7C78', copper = '#C88F6A', ink = '#1F2D2C', cream = '#F7F6F2';
+const line = '#E7E3DA', muted = '#5F6B69', copperBg = '#F8EDE5', copperInk = '#9A6340', tealBg = '#E8F1EF';
+const logo = 'https://www.stewardli.ai/images/website-logo.png';
+const font = "Inter,'Segoe UI',Helvetica,Arial,sans-serif";
 const n = rows.length;
 
 const card = (r, i) => `
 <tr><td style="padding:0 0 12px 0;">
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid ${line};border-radius:10px;background:#ffffff;">
-    <tr><td style="padding:16px 18px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:${cream};border-left:3px solid ${teal};border-radius:6px;">
+    <tr><td style="padding:14px 16px;">
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
-        <td style="font:600 16px/1.3 ${font};color:${ink};">${i + 1}. ${esc(r.name)}</td>
-        <td align="right" style="font:600 15px/1.3 ${font};"><a href="tel:${esc(String(r.phone).replace(/[^\d+]/g, ''))}" style="color:${teal};text-decoration:none;">${esc(fmtPhone(r.phone))}</a></td>
+        <td style="color:${ink};font-size:16px;font-weight:700;line-height:1.3;">${i + 1}. ${esc(r.name)}</td>
+        <td align="right" style="font-size:15px;font-weight:600;line-height:1.3;white-space:nowrap;"><a href="tel:${esc(String(r.phone).replace(/[^\d+]/g, ''))}" style="color:${teal};text-decoration:none;">${esc(fmtPhone(r.phone))}</a></td>
       </tr></table>
-      <table role="presentation" cellpadding="0" cellspacing="0" style="margin-top:10px;"><tr>
-        <td style="background:${soft};border-radius:6px;padding:5px 10px;font:500 13px/1.3 ${font};color:${ink};">Best time: ${esc(r.best)}</td>
-      </tr></table>
-      ${r.summary ? `<div style="margin-top:10px;font:400 14px/1.55 ${font};color:#2B3A44;">${esc(r.summary)}</div>` : ''}
+      <div style="margin-top:8px;"><span style="display:inline-block;background:${copperBg};color:${copperInk};font-size:12px;font-weight:600;padding:4px 10px;border-radius:999px;">Best time: ${esc(r.best)}</span></div>
+      ${r.summary ? `<div style="margin-top:10px;color:${ink};font-size:14px;line-height:1.6;">${esc(r.summary)}</div>` : ''}
     </td></tr>
   </table>
 </td></tr>`;
 
+const headline = n ? `${n} donor${n === 1 ? '' : 's'} asked for a call back` : 'No call backs today';
 const intro = n
-  ? `${n} donor${n === 1 ? '' : 's'} asked for a call back from today's thank you calls. Details are below, with the best time to reach each one.`
-  : `No donors asked for a call back from today's thank you calls. Nothing to do today.`;
+  ? `Hi Mobbs, here are today's call back requests from Nora's thank you calls, with the best time to reach each donor.`
+  : `Hi Mobbs, no donors asked for a call back from today's thank you calls. Nothing to do today.`;
 
-const html = `<!doctype html><html><body style="margin:0;padding:0;background:${bg};">
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:${bg};"><tr><td align="center" style="padding:24px 12px;">
-<table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;">
-  ${sample ? `<tr><td style="padding:0 0 10px 0;font:600 12px/1.4 ${font};color:#8A5A00;background:#FFF4D6;border-radius:8px;padding:8px 12px;">TEST EMAIL with sample donors. Sent to Tan only. Not real data.</td></tr><tr><td style="height:10px;"></td></tr>` : ''}
-  <tr><td style="background:${ink};border-radius:12px 12px 0 0;padding:22px 26px;">
-    <div style="font:700 20px/1.2 ${font};color:#ffffff;letter-spacing:.2px;">Stewardli</div>
-    <div style="font:400 13px/1.4 ${font};color:#B9CCD6;margin-top:4px;">Donor thank you calls for Aphasia Institute</div>
-  </td></tr>
-  <tr><td style="background:#ffffff;padding:24px 26px 8px 26px;">
+const html = `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(headline)}</title></head>
+<body style="margin:0;padding:0;background:${cream};">
+<span style="display:none;max-height:0;overflow:hidden;">${esc(headline)}, ${esc(dayLabel)}</span>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:${cream};padding:24px 12px;font-family:${font};"><tr><td align="center">
+${sample ? `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;margin-bottom:10px;"><tr><td style="background:#FFF4D6;color:#8A5A00;font-size:12px;font-weight:600;padding:8px 12px;border-radius:8px;">TEST EMAIL with sample donors. Sent to Tan only. Not real data.</td></tr></table>` : ''}
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;background:#ffffff;border:1px solid ${line};border-radius:12px;overflow:hidden;">
+  <tr><td style="background:#ffffff;padding:20px 28px;border-bottom:3px solid ${copper};">
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
-      <td style="font:700 22px/1.25 ${font};color:${ink};">Call back requests</td>
-      <td align="right"><span style="display:inline-block;background:${n ? teal : '#9AA9B2'};color:#ffffff;border-radius:999px;padding:6px 14px;font:700 14px/1 ${font};">${n}</span></td>
+      <td style="vertical-align:middle;"><img src="${logo}" width="150" alt="Stewardli.ai" style="display:block;border:0;height:auto;"></td>
+      <td align="right" style="vertical-align:middle;color:${muted};font-size:12px;line-height:1.4;">Donor thank you calls<br>for Aphasia Institute</td>
     </tr></table>
-    <div style="font:500 14px/1.4 ${font};color:${muted};margin-top:4px;">${esc(dayLabel)}</div>
-    <div style="font:400 15px/1.6 ${font};color:#2B3A44;margin-top:18px;">Hi Mobbs,</div>
-    <div style="font:400 15px/1.6 ${font};color:#2B3A44;margin-top:8px;">${intro}</div>
   </td></tr>
-  <tr><td style="background:#ffffff;padding:16px 26px 12px 26px;">
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">${rows.map(card).join('')}</table>
+  <tr><td style="padding:28px 28px 8px;">
+    <div style="display:inline-block;background:${tealBg};color:${teal};font-size:12px;font-weight:600;padding:4px 10px;border-radius:999px;">Call back requests · ${esc(dayLabel)}</div>
+    <h1 style="margin:14px 0 6px;color:${ink};font-size:22px;line-height:1.3;">${esc(headline)}</h1>
+    <p style="margin:0;color:${muted};font-size:14px;line-height:1.6;">${intro}</p>
   </td></tr>
-  <tr><td style="background:#ffffff;border-radius:0 0 12px 12px;padding:4px 26px 24px 26px;font:400 15px/1.6 ${font};color:#2B3A44;">
-    Thanks,<br>Tan, Stewardli
-  </td></tr>
-  <tr><td style="padding:16px 26px;font:400 12px/1.5 ${font};color:#8796A0;text-align:center;">
+  ${n ? `<tr><td style="padding:18px 28px 6px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0">${rows.map(card).join('')}</table></td></tr>` : ''}
+  <tr><td style="padding:10px 28px 26px;color:${ink};font-size:15px;line-height:1.6;">Thanks,<br>Tan, Stewardli</td></tr>
+  <tr><td style="padding:16px 28px;border-top:1px solid ${line};color:${muted};font-size:12px;line-height:1.5;">
     Sent each calling day at 5:15pm from Nora's calls. Reply to this email with any questions.<br>Donor details are for call backs only. Please don't forward.
   </td></tr>
 </table></td></tr></table></body></html>`;
 
-const text = 'Hi Mobbs,\n\n' + intro + '\n\n' +
+const text = intro + '\n\n' +
   rows.map((r, i) => (i + 1) + '. ' + r.name + ', ' + fmtPhone(r.phone) + '\n   Best time: ' + r.best + (r.summary ? '\n   ' + r.summary : '')).join('\n\n') +
   '\n\nThanks,\nTan, Stewardli';
 

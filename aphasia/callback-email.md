@@ -20,7 +20,7 @@ Test send Oct 30 10:45am to tan.h@stewardli.ai only ("TEST (to Tan only)" subjec
 Google Cloud project "Stewardli n8n Integration" is empty and flagged unused. Left alone.
 
 ## Look and test mode (Oct 30, 11am)
-Branded HTML email (navy header, one card per donor: name with last initial, tap-to-call phone, best time, what they said). Code: aphasia/n8n/callback-digest.js, mirrored in the "Build digest" node.
+Branded HTML email (stewardli.ai logo, green #457064 and copper #C88F6A from the logo, layout based on the T&F contact form email, one card per donor: name with last initial, tap-to-call phone, best time, what they said). Code: aphasia/n8n/callback-digest.js, mirrored in the "Build digest" node.
 **Run manually (test)** = 4 made-up donors, subject "TEST (sample data)", sent to tan.h@stewardli.ai only. The 5:15pm schedule uses real GHL data and goes to Mobbs. Sample test sent Oct 30.
 
 ## Not done
