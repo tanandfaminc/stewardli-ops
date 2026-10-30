@@ -46,8 +46,8 @@ Retell's version number is the only version number. One repo file per Retell ver
 | n8n: **"Aphasia Call Campaign (Nora, DRAFT)"** created Oct 29, inactive. Copy of Call Campaign with Nora agent + number and the 5 missing variables (aphasia/field-pipeline-matrix.md). Next: decide what triggers it (GHL workflow or manual), post-call copy done (Aphasia Post Call). Then: GHL trigger + import template, point Nora's Retell webhook at aphasia-outbound-call-analysis, 5 end-to-end tests | Tan + Claude | Tan approves before it is turned on |
 | New field appeal_channel (mail / email) so voicemail names the right one. Spec in aphasia/appeal-channel-field.md. Voicemail says "mail or through email" until built | Tan | Mobbs Fri: does the file have it |
 | Mobbs call done Oct 30 (aphasia/mobbs-call-2026-10-30.md) | done | |
-| Retell: drop "this year" from thank you, "for what?" line and voicemail (Mobbs Oct 30) | Claude | Tan's go |
-| Email Peter the exact fields: first name, last name initial, phone (+ email if we keep the email offer). No address, no combined name | Tan / Chris | today |
+| Retell: "this year" dropped Oct 30 10:25am | done | |
+| Peter sending file later Oct 30 (replied 10:04am). When his fields arrive: ask him to drop address and combined name, last name initial only, keep email if available | Tan | Peter's file |
 | Confirm start date: Chris said Monday first batch, plan says Nov 4 to 6, letter mails Nov 5 or 6 | Chris / Tan | |
 | Split 133 into 2 to 3 daily batches (tag aphasia_call_now per batch) | Tan + Claude | file |
 | Daily call back email to Mobbs (n8n digest of GHL tasks tagged aphasia_institute_callback) | Tan + Claude | not built |

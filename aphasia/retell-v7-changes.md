@@ -87,3 +87,6 @@ Any donor can be missing segment, program, gift date, gift history or email. Nor
 ## Oct 29 2:40pm update (after test D)
 - Step 5 rewritten. Texts are asked once, in Step 2B, never again. The old Step 5 said "This step is CRITICAL. You MUST ask for SMS consent", which overrode every skip rule (texts asked twice on tests B and D). All 10 references to Step 5 updated so nothing contradicts.
 - Line type mobile in the file: no "Is this a cell phone?", straight to the text question.
+
+## Oct 30 10:25am (Mobbs call, Tan's go)
+- "this year" removed: default thank you, "for what?" answer ("You've supported Aphasia Institute."), voicemail in prompt and Retell voicemail field. Reference-only program lines untouched.
