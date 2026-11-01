@@ -3,7 +3,7 @@
 Last updated: Thu Oct 29, 2026, 10:45am (Aphasia pipeline live for testing). Update this file at the end of every session that changes anything.
 
 ## Where we are
-Aphasia Institute pilot signed Oct 26. Nora calls 133 donors Nov 4 to 6. Appeal letter mails Nov 5 or 6. Everything else is in service of that until Nov 6.
+Aphasia Institute pilot signed Oct 26. **Pro bono, pilot-only, no auto-convert to paid** (Oct 27, protects Chris's board seat). Nora calls 133 donors over at least 3 days. **Start date unresolved: Mon Nov 2 (Chris, Oct 29) vs Wed Nov 4 (Peter, Oct 26). Settle with Chris before anything dials.** Appeal letter mails Nov 5 or 6. Decisions from the Oct 27 to 31 calls are in meetings-digest-oct27-31.md. Everything else waits until the pilot report is out.
 
 ## Live systems, current state
 | System | State | Changed by |
