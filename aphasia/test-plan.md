@@ -15,7 +15,7 @@ After each call, check Retell post-call data, not just what Nora said.
 | 3 | line_type unknown | "Yes." Then "Yes." | Does not assume a line type. Asks "Is this a cell phone?" once. On yes, asks the text message question. Logs line_type_confirmed mobile. |
 | 4 | Call inside office hours | "I want to make a donation." | Gives the office number in groups of digits and "extension one two seven". Asks for no amount or payment. Transfers only if live transfer is on. Never says "transferring" otherwise. |
 | 5 | Call after 4 Eastern | "Can I talk to someone?" Then "Yes." Then "Mornings." | Says the office is closed and gives the hours, eight to four. Offers a call back from the Institute. Asks once what time of day is best. Promises no exact time. No transfer. Logs callback_requested true. |
-| 6 | Base | Do not answer. | Leaves the voicemail: first name only, "your support this year," "Your annual appeal letter will be arriving in the mail or through email soon." Names no program. Under 15 seconds. No callback number. No amount. Nothing asked. |
+| 6 | Base | Do not answer. | Leaves the voicemail: first name only, "thank you for your support" (no "this year"), "Your annual appeal letter will be arriving {{appeal_delivery}} soon" (mail → "in the mail", email → "by email", blank → "in the mail or through email"). Names no program. Under 15 seconds. No callback number. No amount. Nothing asked. |
 | 7 | Base | "Don't call me with AI again." | Says "I completely understand. We'll make sure you're removed. Take care." Ends at once. Logs ai_opt_out true. |
 | 8 | Base | Say "Wait, I..." during the gratitude line. | Stops at once. Lets tester speak. Does not finish its sentence or repeat a question. |
 | 9 | Base | "No, wrong number." (after "Am I speaking with Test?") | Apologizes and ends the call. Says nothing about the donor or gift. |
@@ -28,8 +28,9 @@ After each call, check Retell post-call data, not just what Nora said.
 | 16 | Base, call a weekday at 3:55pm | "Can I talk to someone?" | Uses the office-open line: number, "Ask for extension one two seven," "open until four today," offers a call back. |
 | 17 | Base, call a weekday at 4:05pm | "Can I talk to someone?" | Uses the office-closed line with hours eight to four. Offers a call back. Never says "leave a message." |
 | 18 | Base, call on Saturday | "Can I talk to someone?" | Office-closed line, same as row 17. |
-| 19 | program_segment empty | "Yes." | Thank you is "your support this year." Names no walk or art sale. If asked "for what?", says "You supported Aphasia Institute this year." |
+| 19 | program_segment empty | "Yes." | Thank you is "thank you for your support" (no "this year"). Names no walk or art sale. If asked "for what?", says "You've supported Aphasia Institute. We just wanted to say thank you." |
 | 20 | first_name empty, customer_name "Test Donor" | "Yes." | Opener asks "Am I speaking with Test Donor?" Never says "unknown" or a blank. Closing has no name. |
 | 21 | gift_summary and last_gift_amount empty | "How much did I give?" | Says "I don't have that detail. The office can help at extension one two seven." Invents nothing. |
 | 22 | campaign_name "Aphasia Annual Appeal 2026" | Let the call run. | Never says the campaign name aloud. Appeal mention is "Just a heads up, the annual appeal letter goes out in November. Nothing to do right now." |
 | 23 | Base | "Can I leave a message?" | Says "I can't take a message. I can ask someone to call you back. Would that be okay?" |
+| 24 | Base | "She's not home, I'm her husband." (after "Am I speaking with Test?") | Says "No problem. Could you let Test know Aphasia Institute called to say thank you? Have a lovely day." Ends the call. No gift, no appeal, no texts, no cell number. Not treated as wrong number. Not an opt-out. user_reached false. |

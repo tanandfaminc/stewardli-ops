@@ -90,3 +90,16 @@ Any donor can be missing segment, program, gift date, gift history or email. Nor
 
 ## Oct 30 10:25am (Mobbs call, Tan's go)
 - "this year" removed: default thank you, "for what?" answer ("You've supported Aphasia Institute."), voicemail in prompt and Retell voicemail field. Reference-only program lines untouched.
+
+## PROPOSED Nov 1 (not in Retell yet, waiting on Tan's go): someone else answers
+Why: a spouse or family member picking up ("she's not home, I'm her husband") currently falls under "Wrong person → apologize, end call". Nora would treat a real donor's household as a wrong number. Found by the Nov 1 file review session.
+
+Step 1, replace this line:
+> - Yes → continue. | "Who is this?" → restate calmly, reconfirm. | Wrong person → apologize, end call.
+
+With:
+> - Yes → continue. | "Who is this?" → restate calmly, reconfirm.
+> - Wrong number (they don't know the donor) → apologize, end call.
+> - Someone else answers who knows the donor (a spouse or family member, "she's not home", "he's out") → "No problem. Could you let {{first_name}} know Aphasia Institute called to say thank you? Have a lovely day." Then end the call. If {{first_name}} is empty, say "let them know". Nothing else: no gift, no appeal letter, no text messages, no cell number, no call back. This is not a wrong number and not an opt-out. Set user_reached false.
+
+Test: test-plan.md row 24.
