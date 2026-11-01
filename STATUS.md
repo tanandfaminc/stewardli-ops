@@ -39,6 +39,7 @@ Retell's version number is the only version number. One repo file per Retell ver
 ## Open, who owns it
 | Item | Owner | Blocked on |
 |---|---|---|
+| **Pre-launch tests not in test-plan.md, do before Monday.** (1) Batch mechanics: tag 3 test contacts in the same minute, watch n8n and Retell. Parallel or queued? Any concurrency or 429 errors? Decide stagger size for 25/day. (2) Real import: 2 test contacts via the exact Monday CSV. Check tags, custom fields, first name + last initial, Donor Campaign did NOT fire, call_scheduled blank. Delete the 2 after. (3) Real-row persona: segment blank, program none, line type unknown, appeal channel unknown, gift present, NO email. Nora must not offer email. (4) Spouse answers, row 24 (below). Optional: voicemail on a real landline answering machine; rows 16 and 17 Monday 3:55pm and 4:05pm. | Tan + Claude | today |
 | ~~Spouse or household member answers~~ Done Nov 1 1:20pm (Tan's go): household rule in Retell Draft V7 and repo mirror. Test row 24 added, run it in today's calls. | Tan + Claude | test row 24 |
 | File Nov 1: 125 rows (not 133). Held: A071 deceased, A001 US. Review: A103 first name is an initial, 2 couple rows (first listed name used). 123 callable. Proposed 5 batches of ~25, Mon to Fri, BC/Winnipeg rows in Friday afternoon. SEGMENT column useless (same on all). APPEAL1 kept in sheet for reporting, not imported. program_segment none for all. | Tan | Chris to confirm batches |
 | Sign COI + confidentiality agreement | Chris | nothing, today |
