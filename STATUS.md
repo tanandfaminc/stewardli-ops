@@ -63,7 +63,7 @@ Retell's version number is the only version number. One repo file per Retell ver
 | Send reply to Peter with file request link | Tan | Chris's COI + NDA signed. Draft in aphasia/dropbox-intake.md |
 | Dec 6 delete reminder on Tan's and Chris's calendars | Tan | |
 | Nov 1 in-person: fill hours table and section E in agenda-nov1-inperson.md | Tan | before Sun Nov 1 |
-| **Retell credit balance exhausted (402) Oct 29 2:39pm. No calls can go out.** Top up before more tests and before Nov 4. Pilot needs about $60 to $75. Consider low-balance alert or auto top-up | Tan / Chris | Tan's yes on spend |
+| Retell credit: Chris added $200 (Oct 31). Sidebar still shows "Remaining $0.00" and Tan's login can't open Billing. Test web call Nov 1 12:24pm connected and Nora spoke ($0.042), so calls work. Chris to check the Billing page (credits vs card) and set a low-balance alert | Chris | confirm balance |
 | Retell billing admin or invoice screenshot | Chris | |
 | GHL plan and amount | Chris | |
 | Nora demo repo access | Chris | since Oct 20 |
