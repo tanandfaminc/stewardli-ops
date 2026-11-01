@@ -39,7 +39,7 @@ Retell's version number is the only version number. One repo file per Retell ver
 ## Open, who owns it
 | Item | Owner | Blocked on |
 |---|---|---|
-| **Spouse or household member answers** ("she's not home, I'm her husband"). Row 9 (wrong number) hangs up, wrong for this. Add a prompt rule: "No problem. Could you let her know Aphasia Institute called to say thank you? Have a lovely day." Log not_reached. Add test row 24. Do before the 23-row run. | Tan + Claude | today |
+| ~~Spouse or household member answers~~ Done Nov 1 1:20pm (Tan's go): household rule in Retell Draft V7 and repo mirror. Test row 24 added, run it in today's calls. | Tan + Claude | test row 24 |
 | File Nov 1: 125 rows (not 133). Held: A071 deceased, A001 US. Review: A103 first name is an initial, 2 couple rows (first listed name used). 123 callable. Proposed 5 batches of ~25, Mon to Fri, BC/Winnipeg rows in Friday afternoon. SEGMENT column useless (same on all). APPEAL1 kept in sheet for reporting, not imported. program_segment none for all. | Tan | Chris to confirm batches |
 | Sign COI + confidentiality agreement | Chris | nothing, today |
 | Confirm mail date | Peter | EOD Oct 27 |

@@ -91,7 +91,7 @@ Any donor can be missing segment, program, gift date, gift history or email. Nor
 ## Oct 30 10:25am (Mobbs call, Tan's go)
 - "this year" removed: default thank you, "for what?" answer ("You've supported Aphasia Institute."), voicemail in prompt and Retell voicemail field. Reference-only program lines untouched.
 
-## PROPOSED Nov 1 (not in Retell yet, waiting on Tan's go): someone else answers
+## Nov 1 1:20pm update (Tan's go): someone else answers. In Retell Draft V7, confirmed after reload
 Why: a spouse or family member picking up ("she's not home, I'm her husband") currently falls under "Wrong person → apologize, end call". Nora would treat a real donor's household as a wrong number. Found by the Nov 1 file review session.
 
 Step 1, replace this line:
