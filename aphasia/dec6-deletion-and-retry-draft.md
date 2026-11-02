@@ -28,6 +28,11 @@ Aggregate counts for the pilot report: rows received, callable, called, answered
 
 ### Open questions
 1. Do Retell and Twilio let us set or force retention, or only delete by hand? Ask both for their backup and sub-processor retention in writing (check).
+   Research Nov 2 (public docs):
+   - Retell: retention is set per agent (Security & fallback settings): forever (default) or 1 to 730 days. On expiry it deletes recordings, transcripts, call logs, dynamic variables and metadata, runs daily, permanent. Docs say "some basic metadata is retained internally". Docs say nothing on manual delete, backups or sub-processors. Option: set Nora + inbound agent retention so it expires around Dec 6 (changes live agents, Tan's go, and pull report data first).
+   - Twilio: call logs and recordings can be deleted in the Console or API. Transcriptions API only. Deleting a call log does NOT delete its recordings. Permanent. Twilio says deletion is processed immediately but some data has a minimum hold (often 30 days). Backup timing not published.
+   - Still ask both in writing: backups, and what "basic metadata" stays.
+   Sources: docs.retellai.com/accounts/data-retention, support.twilio.com articles 223133047 and 4410585868443.
 2. Does Aphasia want call results back before Dec 6? Chris told them results go to CanadaHelps. If yes, send a results file (first name, initial, outcome, call back flag) to Mobbs before deletion, in a way she approves. Decide with Chris.
 3. Does "service-provider copies" include Retell's AI and voice vendors? Say what we can prove and what we rely on their policy for.
 4. Peter said 133, file had 125. Count in the confirmation: say "the file" not a number.
