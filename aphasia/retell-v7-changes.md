@@ -124,3 +124,8 @@ All confirmed after reload.
 
 ## Nov 1 10:55pm update (Tan's go, Chris's script review)
 Scam answer: "I'm not asking for money or any personal information." → "I'm not asking for a donation or any payment details." (Nora does ask phone type and contact preference.) Confirmed after reload. Peter's script doc updated the same, plus its data line now says Nora receives first name, last initial, phone, and email + last gift amount/date where the file has them.
+
+## Nov 1 11:20pm update (Tan's go, after slow speaker test 1 failed)
+Prompt: added UNCLEAR ANSWERS, HESITANT ANSWERS, NO REPEATS, SHORT ANSWERS, NO FILLER (after the personal connection rule). Accessible mode now triggers on ONE sign (incl. "sorry, what?", trailing off, um/uh) and skips "What inspired you" and Step 4. Accessible item 8 now offers an Institute call back ("Morning or afternoon?"), never Nora booking a time. Step 6 notes Step 4 is skipped in accessible mode.
+Retell speech settings: Response Wait time 900ms → 1.8s (dynamic adjust still on). Backchannel frequency 0.8 → 0.3. Interruption sensitivity unchanged 0.75.
+All confirmed after reload.
