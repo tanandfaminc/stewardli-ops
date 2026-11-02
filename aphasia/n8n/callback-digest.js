@@ -1,6 +1,7 @@
 // n8n Code node "Build digest" (Aphasia Daily Call Back Email).
 // Real run (schedule): today's open "Callback" tasks from GHL, emailed to Mobbs.
 // Manual run ("Run manually (test)"): 4 SAMPLE donors, sent to Tan only. No real data.
+// Any run outside weekday 5:10 to 5:25pm Toronto: REAL data from today and yesterday, sent to Tan and Chris only.
 const tz = 'America/Toronto';
 const now = new Date();
 const today = now.toLocaleDateString('en-CA', { timeZone: tz });
@@ -8,6 +9,13 @@ const dayLabel = now.toLocaleDateString('en-CA', { timeZone: tz, weekday: 'long'
 
 let sample = false;
 try { sample = $('Run manually (test)').all().length > 0; } catch (e) {}
+let realTest = false;
+// Mobbs only gets the email inside the scheduled window (weekday 5:10pm to 5:25pm Toronto). Any other run is a test to Tan and Chris.
+const parts = Object.fromEntries(new Intl.DateTimeFormat('en-US', { timeZone: tz, weekday: 'short', hour: 'numeric', minute: 'numeric', hour12: false }).formatToParts(now).map(p => [p.type, p.value]));
+const mins = (parseInt(parts.hour, 10) % 24) * 60 + parseInt(parts.minute, 10);
+const inWindow = ['Mon','Tue','Wed','Thu','Fri'].includes(parts.weekday) && mins >= 17 * 60 + 10 && mins <= 17 * 60 + 25;
+realTest = !sample && !inWindow;
+const yesterday = new Date(now.getTime() - 86400000).toLocaleDateString('en-CA', { timeZone: tz });
 
 let rows = [];
 if (sample) {
@@ -25,8 +33,11 @@ if (sample) {
   taskItems.forEach((it, idx) => {
     const c = contacts[idx] || {};
     for (const t of (it.json.tasks || [])) {
-      const added = t.dateAdded ? new Date(t.dateAdded).toLocaleDateString('en-CA', { timeZone: tz }) : '';
-      if (added !== today || t.completed || !String(t.title || '').startsWith('Callback')) continue;
+      // GHL tasks carry no created date. Aphasia Post Call sets dueDate = call time + 24h, so the call day = dueDate minus one day.
+      const createdMs = t.dateAdded ? new Date(t.dateAdded).getTime() : (t.dueDate ? new Date(t.dueDate).getTime() - 86400000 : NaN);
+      const added = isNaN(createdMs) ? '' : new Date(createdMs).toLocaleDateString('en-CA', { timeZone: tz });
+      const okDay = added === today || (realTest && added === yesterday);
+      if (!okDay || t.completed || !String(t.title || '').startsWith('Callback')) continue;
       const body = String(t.body || '');
       const best = (body.match(/Best time: ([^.]*)/) || [])[1] || 'not given';
       const summary = (body.match(/Call summary: (.*?) Campaign:/) || [])[1] || '';
@@ -71,7 +82,7 @@ const html = `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta n
 <body style="margin:0;padding:0;background:${cream};">
 <span style="display:none;max-height:0;overflow:hidden;">${esc(headline)}, ${esc(dayLabel)}</span>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:${cream};padding:24px 12px;font-family:${font};"><tr><td align="center">
-${sample ? `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;margin-bottom:10px;"><tr><td style="background:#FFF4D6;color:#8A5A00;font-size:12px;font-weight:600;padding:8px 12px;border-radius:8px;">TEST EMAIL with sample donors. Sent to Tan only. Not real data.</td></tr></table>` : ''}
+${(sample || realTest) ? `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;margin-bottom:10px;"><tr><td style="background:#FFF4D6;color:#8A5A00;font-size:12px;font-weight:600;padding:8px 12px;border-radius:8px;">${sample ? 'TEST EMAIL with sample donors. Sent to Tan only. Not real data.' : 'TEST EMAIL with real call back tasks from today and yesterday. Sent to Tan and Chris only.'}</td></tr></table>` : ''}
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;background:#ffffff;border:1px solid ${line};border-radius:12px;overflow:hidden;">
   <tr><td style="background:#ffffff;padding:20px 28px;border-bottom:3px solid ${copper};">
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
@@ -95,6 +106,6 @@ const text = intro + '\n\n' +
   rows.map((r, i) => (i + 1) + '. ' + r.name + ', ' + fmtPhone(r.phone) + '\n   Best time: ' + r.best + (r.summary ? '\n   ' + r.summary : '')).join('\n\n') +
   '\n\nThanks,\nTan, Stewardli';
 
-const subject = (sample ? 'TEST (sample data): ' : '') + 'Call back requests, ' + dayLabel + ' (' + n + ')';
-const to = sample ? 'tan.h@stewardli.ai' : 'misaac@aphasia.ca';
+const subject = (sample ? 'TEST (sample data): ' : realTest ? 'TEST (real data, Tan + Chris only): ' : '') + 'Call back requests, ' + dayLabel + ' (' + n + ')';
+const to = sample ? 'tan.h@stewardli.ai' : realTest ? 'tan.h@stewardli.ai, chris.n@stewardli.ai' : 'misaac@aphasia.ca';
 return [{ json: { to, subject, text, html, count: n, date: today, sample } }];

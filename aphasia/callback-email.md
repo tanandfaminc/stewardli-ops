@@ -27,3 +27,9 @@ Branded HTML email (stewardli.ai logo, green #457064 and copper #C88F6A from the
 1. ~~Tan to confirm the test email looks right.~~ Locked by Tan Oct 30, 10:56am.
 2. **Trigger risk.** A task is created only when Retell's donor_intent comes back as "callback_requested". The prompt says "set callback_requested". Test E (after hours) must confirm the donor_intent value.
 3. Turn on only for calling days. Turn off after the pilot.
+
+## Nov 2 7:20am: real-data test + two fixes (live in n8n, workflow still inactive)
+1. **Bug fixed: email would always say "no call backs".** GHL tasks have no created date (only dueDate). Filter now uses dueDate minus 24h (Aphasia Post Call sets due = call time + 24h). If Post Call ever changes how it sets dueDate, this must change too.
+2. **Safety rule:** Mobbs only gets the email when the run happens weekday 5:10 to 5:25pm Toronto. Any other run (manual, accidental) goes to tan.h@ + chris.n@ with "TEST (real data...)" subject and includes yesterday's tasks. "Run manually (test)" still = 4 sample donors to Tan.
+   (First attempt used $execution.mode, which did not work: a pre-send check showed it would have gone to Mobbs. Caught before Gmail ran.)
+3. Test sent 7:20am to Tan + Chris: 4 real call back tasks from the Nov 1 test calls.
