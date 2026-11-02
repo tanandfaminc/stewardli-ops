@@ -121,3 +121,6 @@ Retest showed Nora still invents "I see we have phone call" with preferred_chann
 - Step 4: after "We can do text message or phone call." added "Say only that sentence. Do not offer to note email or say anything else about email."
 - Retell field callback_time_window: appended "Use only words the donor said. Never use Nora's words such as during office hours or someone will call you back. If the donor gave no time, write: not given."
 All confirmed after reload.
+
+## Nov 1 10:55pm update (Tan's go, Chris's script review)
+Scam answer: "I'm not asking for money or any personal information." → "I'm not asking for a donation or any payment details." (Nora does ask phone type and contact preference.) Confirmed after reload. Peter's script doc updated the same, plus its data line now says Nora receives first name, last initial, phone, and email + last gift amount/date where the file has them.
