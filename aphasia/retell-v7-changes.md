@@ -103,3 +103,9 @@ With:
 > - Someone else answers who knows the donor (a spouse or family member, "she's not home", "he's out") → "No problem. Could you let {{first_name}} know Aphasia Institute called to say thank you? Have a lovely day." Then end the call. If {{first_name}} is empty, say "let them know". Nothing else: no gift, no appeal letter, no text messages, no cell number, no call back. This is not a wrong number and not an opt-out. Set user_reached false.
 
 Test: test-plan.md row 24.
+
+## Nov 1 9:20pm update (Tan's go, after the batch test)
+1. **Callback Scheduling rewritten.** Every call back is the Institute's. Nora asks "What time of day is best?" once, logs the donor's words, says "Okay. I'll pass that along. Someone from the Institute will call you back during office hours." Never confirms a day, date or clock time. Removed "You are all set for a callback on [day]... We will call you then." Transfer section line now: "Nora never calls anyone back herself. See Callback Scheduling."
+2. **Step 4:** email offered only when {{donor_email}} has a value. Otherwise "Do you prefer text message or phone call?"
+3. **Retell post-call field callback_time_window** (not in the prompt): description now asks for the donor's own words, plain text, no full stops ("weekday mornings 9 to 10:30 am"), "not given" if none. Old description extracted an ISO datetime from the agent's confirmation. n8n Aphasia Post Call "Create Callback Task": strips full stops from the best time (live, activeVersion confirmed). Due date falls back to next day when the time is not a datetime.
+All three confirmed after reload. Retest: opt-out call + one call back call.
