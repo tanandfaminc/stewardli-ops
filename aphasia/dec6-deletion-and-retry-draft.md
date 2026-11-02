@@ -15,6 +15,7 @@ Rule: before Dec 6, pull the pilot report numbers (counts only). On Dec 6, delet
 | GHL MVP sub-account | Contacts (name, initial, phone, email, gift fields), notes, call back tasks, tags, conversation records | Tan | Smart list: tag client:aphasia. Select all > Delete contacts. This removes notes and tasks. Conversation records: check they go with the contact. Check GHL trash or backups. | Screenshot: count of client:aphasia contacts = 0 |
 | Retell | Call recordings, transcripts, call analysis, phone number in each call record | Tan (Chris has billing) | Call history, filter agent Nora outbound, delete calls (check: bulk delete or API delete-call). Check: Data storage setting for retention, or opt out of storing recordings. | Screenshot of call history with the pilot date range empty. Retell's written answer on backups (check) |
 | n8n: Aphasia Call Campaign, Aphasia Post Call, Aphasia Daily Call Back Email | Execution logs with payloads: names, phones, summaries, call back text | Tan | Executions > filter each workflow > delete all. Check the pruning setting (max age) so nothing is kept. Check: any DB backup of n8n. | Screenshot: 0 executions per workflow |
+| n8n: Aphasia Inbound Call Back (added Nov 2) | Execution logs: caller phone, call time, matched contact name and ID. Also logs callers NOT on the donor list (phone only). | Tan | Same as the row above. Then deactivate the workflow and remove the webhook URL from the Retell inbound agent, so nothing new is logged. GHL tag aphasia_called_back and its notes go with the contacts in the GHL row. | Screenshot: 0 executions, workflow off |
 | Gmail tan.h@stewardli.ai | Sent call back emails (first name, initial, phone, what they said) | Tan | Search to:misaac@aphasia.ca subject "call back requests". Delete, then empty Trash. Ask Mobbs to delete her copies (she owns them). | Screenshot of empty search, Mobbs reply |
 | Twilio | Call logs for the Nora number (numbers called, times) | Tan | Console > Monitor > Logs > Calls. Check: can records be deleted in the console or only by API. Check: retention setting. | Screenshot or API delete result |
 | Claude chats, Claude project, this repo | Must hold no donor data. Test contacts only (made-up names, team phones). | Tan | Search repo and project for the real file's join_ids and any real phone. Delete anything found. Git history too (check). | Search result "0 hits", date |
@@ -40,7 +41,7 @@ Today: no retries. A no answer gets Nora's voicemail and is never redialed.
 | Option | What happens | Cost and risk |
 |---|---|---|
 | A. No retry | One call, one voicemail | Cheapest. Many donors never reached. Pilot proves less |
-| B. One retry | Next calling day, different time of day | About $0.09 a voicemail, $0.45 if answered. Low annoyance |
+| B. One retry | Next calling day, after 2pm like all calls | About $0.09 a voicemail, $0.45 if answered. Low annoyance |
 | C. Two retries | Second retry the day after | More reach. Two voicemails to one donor feels pushy for a thank-you |
 
 **Recommend B.** A thank-you should not feel like chasing, and one retry at a different time covers most missed calls.
@@ -51,15 +52,16 @@ Today: no retries. A no answer gets Nora's voicemail and is never redialed.
 - Cap: 1 retry. Max 2 attempts per donor in the pilot.
 
 ### Timing
-- Retry the next calling day, Mon to Fri only. Time of day different from the first try (first in the morning, retry after 1pm, and the other way round).
-- Inside 10am to 4pm donor local time. Batch 5 (BC, Winnipeg) stays afternoon Eastern.
+- Updated Nov 2: Tan and Chris decide after day 1, from the list of donors not reached. Tan wants that list pulled after the last call of day 1.
+- Retry the next calling day, Mon to Fri only. All calls go out after 2pm Toronto (Chris + Tan, Nov 2), so retries do too. To vary the time, retry later in the afternoon than the first try (first try 2pm, retry closer to 3:30pm).
+- Out-of-province donors (Alberta, BC) are called at 5pm Toronto so they land around 2 to 3pm local. Their retries use the same 5pm run. Office is closed by then, so Nora offers a call back if they ask for a person.
 - Friday batch 5 retries the next Monday. Never on weekends.
 - Letter: the voicemail says the appeal "will be arriving". Mail date is Nov 5 or 6. Retries after it lands may sound wrong. Proposal: all retries done by Mon Nov 9. Ask Mobbs if she wants the voicemail to change for retries (check).
 
 ### What has to be built (needs Tan's go, NOT built)
 1. Aphasia Post Call (live n8n): on no answer or voicemail, add tag aphasia_retry_pending. On a second no answer, add aphasia_attempt_2_done instead. Draft first, Tan applies.
 2. GHL smart list "Aphasia retry due": tag aphasia_retry_pending, not aphasia_attempt_2_done, DND Call FALSE, no aphasia_institute_callback tag.
-3. Daily by hand: Tan selects that list > Trigger automation > Aphasia Nora Calls in drip mode (same 3 minute stagger, 10am to 4pm window). Remove aphasia_call_now first because re-entry is on.
+3. Daily by hand: Tan selects that list > Trigger automation > Aphasia Nora Calls in drip mode (same 3 minute stagger, after 2pm). Remove aphasia_call_now first because re-entry is on.
 4. Do NOT use the existing "Call Retry - No Answer/Voicemail" workflow or tag stewardli_retry_needed. It was built for another agent and number, and Aphasia Post Call never feeds it.
 5. Daily call back email: no change. Retry results go to the pilot report counts.
 6. Test with two made-up contacts before use: no answer gets the tag, opt-out does not, second miss stops.
