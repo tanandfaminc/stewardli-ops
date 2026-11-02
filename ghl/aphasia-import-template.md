@@ -1,5 +1,17 @@
 # Aphasia import template (GHL MVP sub-account)
 
+## OFFICIAL format, Nov 1 2026 8:55pm (Tan's working sheet)
+Headers use GHL field display names, so the GHL import maps them by itself (tested Nov 1 with 3 test rows: 18 of 18 auto-mapped).
+`Donor ID, First Name, Last Name, Phone, Email, appeal_given, Last Gift Date, Last Gift Amount, batch, Consent Call, DND Call, DND SMS, DND Email, Organization Name, Campaign Name, AI Call Opt Status, Line Type Confirmed, Program Segment, Appeal Channel, Tags`
+- Donor ID = join_id (A001...). Last Name = last initial only. Last Gift Amount = file's LG_AMT.
+- appeal_given and batch stay in the sheet, NOT imported: tick "Don't import data in 2 unmapped columns".
+- Fixed on every row: Consent Call TRUE, DND Call/SMS/Email FALSE, Organization Name "Aphasia Institute", Campaign Name "Aphasia Annual Appeal 2026", AI Call Opt Status not_asked, Line Type Confirmed unknown, Program Segment none, Appeal Channel unknown, Tags "client:aphasia,campaign:cmp_aphasia_appeal_26,stewardli_campaign_started".
+- Import mode: **Create contacts** (not create and update). No workflow, no extra tags in the import screen. Never add aphasia_call_now in the file.
+- Tan ticks GHL's consent attestation box himself (rests on Peter's written consent confirmation).
+- Campaign ID is not in the file: stays blank so Donor Campaign ends.
+
+## Older notes (superseded headers below)
+
 File: ghl/aphasia-import-template.csv. Two sample rows only (fake people, 555 numbers). Never commit real donor rows.
 Tags added in the GHL import screen: client:aphasia, campaign:cmp_aphasia_appeal_26, **stewardli_campaign_started** (keeps contacts out of Donor Campaign). Calling starts only when the tag aphasia_call_now is added.
 
