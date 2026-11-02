@@ -36,6 +36,10 @@ join_id, first_name, last_initial, phone, email, appeal_given, last_gift_date, l
 
 Batch 5 dials in the afternoon: 9am Toronto is 6am in BC.
 
+**Batch 5 = two separate drip runs (agreed Nov 2):** first ~20 Ontario rows at 2pm Toronto; the out-of-province rows (Alberta, BC, Winnipeg if any) at 5pm Toronto, so they land around 2 to 3pm local. Same steps each run: select the rows in GHL → Trigger automation → Aphasia Nora Calls → drip mode, batch 1, every 3 minutes, start time.
+
+**All batches:** start after 2pm Toronto (Chris, Nov 2).
+
 ## Not yet done
 - Import mapping to GHL field keys (needs the 2-row test import first)
 - Export per batch to CSV in a non-synced local folder, one batch per calling day
