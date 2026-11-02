@@ -27,10 +27,11 @@ GHL auth headers were cloned inside n8n from Aphasia Post Call. No token in this
 ## Tests
 - Nov 2, 9:27am: sample run PASS. Tan H (QIG5MxqxgX3Vaq23ANYr) got tag aphasia_called_back and note "Donor called back on Mon, Nov 2, 9:27 a.m. (Toronto). Transferred to the office (ext 127). Call length 35s."
 
-## To go live (needs Tan's go)
-1. Activate the workflow.
-2. Retell inbound agent > Webhook settings > Agent Level Webhook URL = https://automation.stewardli.ai/webhook/aphasia-inbound-call-back. This is a change to a published agent.
-3. Real test call. Warning: a real call to 289-207-6218 transfers to Mobbs's line. Safe option: Tan calls from his cell and hangs up during the greeting (expect outcome "Caller hung up before the transfer went through").
+## Live (Tan's go, Nov 2 9:41am)
+1. Workflow y0QphncjgP6QVZTE activated.
+2. Retell inbound agent > Webhook settings > Agent Level Webhook URL = https://automation.stewardli.ai/webhook/aphasia-inbound-call-back. Autosaved. No publish needed: the 289 number uses the inbound agent's "Latest Created" version (same as Nora's outbound). Webhook events left at default.
+3. Real test: Tan calls 289-207-6218 from his cell AFTER 4pm and lets the transfer go through (ext 127 goes to voicemail after hours). Expect a second note on Tan H. Pending.
+Warning: any real call to 289-207-6218 transfers to Mobbs's line.
 
 ## Not done
 - Call backs are not in the 5:15pm email to Mobbs. She takes the transferred call herself, but a missed transfer is not reported anywhere except the GHL note.
