@@ -129,3 +129,7 @@ Scam answer: "I'm not asking for money or any personal information." → "I'm no
 Prompt: added UNCLEAR ANSWERS, HESITANT ANSWERS, NO REPEATS, SHORT ANSWERS, NO FILLER (after the personal connection rule). Accessible mode now triggers on ONE sign (incl. "sorry, what?", trailing off, um/uh) and skips "What inspired you" and Step 4. Accessible item 8 now offers an Institute call back ("Morning or afternoon?"), never Nora booking a time. Step 6 notes Step 4 is skipped in accessible mode.
 Retell speech settings: Response Wait time 900ms → 1.8s (dynamic adjust still on). Backchannel frequency 0.8 → 0.3. Interruption sensitivity unchanged 0.75.
 All confirmed after reload.
+
+## Nov 1 11:30pm update (Tan's go, after slow speaker test 2)
+Simplified the call for the pilot. Step 4 (contact preference) SKIPPED: body replaced with "Do not ask how the donor prefers to be contacted and never offer email. Go from Step 3 straight to Step 6." All "complete Step 4 before closing" references removed. Step 3: the engagement question ("What inspired you") is asked ONLY if the donor has been giving full, chatty answers; short, hesitant or unclear answers skip it and go to closing. Transition "And while I have you for just a moment..." removed. Call is now: opener, thank you, appeal heads-up, cell + text question, how are you, (optional engagement question), closing. Confirmed after reload.
+Peter's script doc needs the same update (Step 5 optional, Step 6 removed).
