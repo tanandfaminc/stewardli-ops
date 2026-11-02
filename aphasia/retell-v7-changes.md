@@ -109,3 +109,9 @@ Test: test-plan.md row 24.
 2. **Step 4:** email offered only when {{donor_email}} has a value. Otherwise "Do you prefer text message or phone call?"
 3. **Retell post-call field callback_time_window** (not in the prompt): description now asks for the donor's own words, plain text, no full stops ("weekday mornings 9 to 10:30 am"), "not given" if none. Old description extracted an ISO datetime from the agent's confirmation. n8n Aphasia Post Call "Create Callback Task": strips full stops from the best time (live, activeVersion confirmed). Due date falls back to next day when the time is not a datetime.
 All three confirmed after reload. Retest: opt-out call + one call back call.
+
+## PROPOSED Nov 1 9:30pm (not in Retell yet, needs Tan's go): Step 4 stronger
+Retest showed Nora still invents "I see we have phone call" with preferred_channel empty, and lists email when asked for options. Replace both Step 4 lines (from "Check {{preferred_channel}} first." to "Never offer email when there is no email on file.") with:
+> There is no preferred channel on file for these donors. Never say "I see we have", never name a current preference, and never assume phone call because this is a phone call.
+> If {{donor_email}} has a value → ask: "Do you prefer text message, phone call, or email?"
+> If {{donor_email}} is empty → ask: "Do you prefer text message or phone call?" If the donor asks what the options are, or asks for email, say: "We can do text message or phone call." Never offer or list email when there is no email on file.
