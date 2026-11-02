@@ -115,3 +115,9 @@ Retest showed Nora still invents "I see we have phone call" with preferred_chann
 > There is no preferred channel on file for these donors. Never say "I see we have", never name a current preference, and never assume phone call because this is a phone call.
 > If {{donor_email}} has a value → ask: "Do you prefer text message, phone call, or email?"
 > If {{donor_email}} is empty → ask: "Do you prefer text message or phone call?" If the donor asks what the options are, or asks for email, say: "We can do text message or phone call." Never offer or list email when there is no email on file.
+
+## Nov 1 9:58pm update (Tan's go, after full retest)
+- OFFICE CLOSED, Yes: "Your next turn is ONLY the question 'What time of day is best?' Stop and wait... Only after the donor answers, say 'Okay. I'll pass that along...' Then go to the Step 6 closing. Never skip the time question."
+- Step 4: after "We can do text message or phone call." added "Say only that sentence. Do not offer to note email or say anything else about email."
+- Retell field callback_time_window: appended "Use only words the donor said. Never use Nora's words such as during office hours or someone will call you back. If the donor gave no time, write: not given."
+All confirmed after reload.
