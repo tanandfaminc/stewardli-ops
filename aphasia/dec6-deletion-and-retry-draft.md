@@ -10,7 +10,7 @@ Rule: before Dec 6, pull the pilot report numbers (counts only). On Dec 6, delet
 |---|---|---|---|---|
 | Drive: ORIGINAL file | Peter's full 57 column file (addresses, codes) | Tan | Drive > Clients > Aphasia. Delete file. Open Trash, delete forever. Check Shared drive trash too. | Screenshot of empty folder and empty trash, dated |
 | Drive: working sheet and batch CSVs | join_id, first name, last initial, phone, email, gift date and amount, batch | Tan | Same. Also File > Version history is deleted with the file. Delete the folder itself last. | Same screenshot |
-| Dropbox: file request folder | The uploaded original | Tan | Delete the folder. Then Deleted files > select > Permanently delete. Close or delete the file request. | Screenshot of Deleted files with no Aphasia items |
+| Dropbox (PETER's, not ours) | The original file Peter shared with us | Peter | Not ours to delete. Ask Peter in the Dec 6 confirmation to remove the share or link on his side. Our side: check we have no Dropbox copy or synced download (covered by the local CSV row). | Peter's reply |
 | Local CSVs on Tan's machine | Batch exports, any download | Tan | Delete the folder and empty Recycle Bin / Trash. Also check Downloads and any synced folder (check: search by file name). | Short note: folder path, date deleted |
 | GHL MVP sub-account | Contacts (name, initial, phone, email, gift fields), notes, call back tasks, tags, conversation records | Tan | Smart list: tag client:aphasia. Select all > Delete contacts. This removes notes and tasks. Conversation records: check they go with the contact. Check GHL trash or backups. | Screenshot: count of client:aphasia contacts = 0 |
 | Retell | Call recordings, transcripts, call analysis, phone number in each call record | Tan (Chris has billing) | Call history, filter agent Nora outbound, delete calls (check: bulk delete or API delete-call). Check: Data storage setting for retention, or opt out of storing recordings. | Screenshot of call history with the pilot date range empty. Retell's written answer on backups (check) |
@@ -24,7 +24,7 @@ Rule: before Dec 6, pull the pilot report numbers (counts only). On Dec 6, delet
 Aggregate counts for the pilot report: rows received, callable, called, answered, voicemail, no answer, opt-outs, call backs requested, wrong number, household answered, text opt-ins, average call length, total cost. Test logs with made-up contacts. This deletion list and the proofs.
 
 ### Written confirmation to Peter (draft)
-> Hi Peter, as promised, on Dec 6, 2026 we deleted the Aphasia Institute donor file and every copy we made of it: the original and working files, the call recordings, transcripts and call results, the contact records in our CRM, the automation logs, and the call back emails. We kept only aggregate counts for the pilot report, with no names or phone numbers. Please confirm your side is done as well.
+> Hi Peter, as promised, on Dec 6, 2026 we deleted the Aphasia Institute donor file and every copy we made of it: the original and working files, the call recordings, transcripts and call results, the contact records in our CRM, the automation logs, and the call back emails. We kept only aggregate counts for the pilot report, with no names or phone numbers. The file still sits in your Dropbox, so you may want to remove the shared link on your side.
 
 ### Open questions
 1. Do Retell and Twilio let us set or force retention, or only delete by hand? Ask both for their backup and sub-processor retention in writing (check).
