@@ -28,10 +28,10 @@ Rows to check first in batch 01: Parkdale (ED named in a 2023 source; CanadaHelp
 7. When they accept, wait a day. Then a short thank you. Still no pitch. The stewardship conversation comes when they ask what you're working on.
 
 ## Rules the notes follow
-- Warm, direct, peer to peer. You're a fundraiser and board member writing to another one.
+- Warm, direct, leader to leader.
 - One specific thing about their org, taken from a public page.
-- No pitch, no product, no AI in the first note.
-- Positioning, when it comes up later: stewardship, not operations.
+- Positioning (Chris, Nov 9): fundraising strategy and leadership, not traditional one-to-one fundraising. We support fundraising teams with data and insight into their donor portfolio and pipeline, so they invest well, grow revenue, and acquire and keep donors.
+- No product name, no ask for a meeting, no AI in the first note.
 
 ## How rows were picked
 Sources: CharityVillage job postings, CanadaHelps charity profiles, Ontario Nonprofit Network. Imagine Canada blocks automated reads, so it's not in batch 01.
