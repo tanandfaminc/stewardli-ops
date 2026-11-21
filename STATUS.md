@@ -1,5 +1,7 @@
 # STATUS: read this first
 
+> **Nov 20 note:** the sections below were last fully updated Nov 1 and are stale on the Aphasia pilot. For Sunday Nov 22 work, read sunday-2026-11-22-prep.md and prompts M, N, O. Refresh this file before the next live-system change.
+
 Last updated: Sun Nov 1, 2026, 8:45pm (file clean). Previous: Thu Oct 29, 2026, 10:45am (Aphasia pipeline live for testing). Update this file at the end of every session that changes anything.
 
 ## Where we are
