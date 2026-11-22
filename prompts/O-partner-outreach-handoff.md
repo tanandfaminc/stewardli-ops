@@ -8,7 +8,7 @@ Work as an orchestrator. Subagent (sonnet), web research: partner categories for
 
 Output:
 1. Tiers: who to approach first and why (lowest requirement, closest to what Nora already does with a CSV and GoHighLevel).
-2. What Stewardli can honestly offer a partner today: one completed pro bono pilot, anonymized learnings only, no named client.
+2. What Stewardli can honestly offer a partner today. Be exact: the Aphasia pilot is built and tested but has NOT run live calls. It goes to Aphasia's Funds Development Committee in December (Chris, Nov 6). So: a working product, a pilot ready to run, no results yet, no named client. Never claim a completed pilot or any outcome numbers.
 3. What Tan needs from Chris for the handoff: names, history, what was already said to whom, which relationships Chris must stay out of.
 4. A first-touch message in Tan's voice as technical partner, under 90 words, two versions (platform partner, agency partner).
 5. Time: hours per week this adds, against Tan's 8 to 10.

@@ -11,5 +11,6 @@ Output:
 2. Site change list, two columns: if the grant angle is adopted, if it is not. For each change: page, current wording, proposed wording, effort (S/M/L), who must approve.
 3. Easy sign-up: what replaces or sits beside the calendar booking (short form to GHL, fields, what happens in the first 24 hours). Which GHL form and workflow it needs.
 4. Ops changes that follow: pilot intake checklist from the Aphasia run (NDA or confidentiality, data handling, script approval, batch plan, daily call-back email, Dec 6 style deletion), and what must exist before a second pilot starts.
-5. Claims check: nothing on the site may cite Aphasia by name (pilot is pro bono and anonymized-learnings only) or state retention numbers that are not sourced.
+5. Pilot status for the site: the Aphasia pilot has not run live calls yet (December committee review, per Chris Nov 6). No case study, results or logo exist. Do not draft copy that implies otherwise.
+6. Claims check: nothing on the site may cite Aphasia by name (pilot is pro bono and anonymized-learnings only) or state retention numbers that are not sourced.
 Five lines back to Tan when done. Short sentences, no em dashes.
