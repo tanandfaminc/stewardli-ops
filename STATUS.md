@@ -86,6 +86,7 @@ Retell's version number is the only version number. One repo file per Retell ver
 | Nora demo repo access | Chris | since Oct 20 |
 | Costing numbers to Tan and Fred | Chris | overdue |
 | Prospecting batch 01: review format, check against Fred's list before sending | Chris | Fred's list (Tan sending) |
+| **US calling brief done Nov 23 (prompt R): compliance/us-calling-brief.md.** Nora to US donors only with documented prior express consent per donor, a thank-you-only script (no appeal mention) and a US number with A attestation. Whitefish CRM grant is not blocked (no calling needed). 10 lawyer questions ready to send. | Tan + Chris | US lawyer review before any US dial |
 
 ## Prompts and what they are for
 | Prompt | Use when | Status |
